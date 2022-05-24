@@ -8,7 +8,7 @@
 
 .problems {
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
     padding: 2em;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
 
 .container {
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
     padding: 2em;
     border: 3px solid rgb(177, 177, 177);
     border-radius: 1em;
@@ -28,14 +28,27 @@
     justify-content: left;
 }
 
+.top{
+    margin: 0 auto;
+    width: 100px;
+    display: flex;
+}
+
+
+
 .problem{
     text-indent: 1rem;
 }
 
+#problem{
+    text-indent: 1rem;
+}
+
+
 form {
   /* フォームをページの中央に配置 */
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
     /* フォームの輪郭 */
     padding: 2em;
     border: 3px solid rgb(177, 177, 177);

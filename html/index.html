@@ -3,14 +3,27 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DTRX430E4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9DTRX430E4');
+  </script>
 </head>
 <body>
     <div class="title">
         <h1>Shiba's CTF</h1>
     </div>
-    <div class="container" id="score">
-        
+    <div class="container">
+      ・サイバーセキュリティーに関するかもしれない問題集です．
+      <br>
+      ・全ての問題で，フラグ形式は，sctf{hogehoge}です．
+      <br>
+      ・なお，このサイトはcookieを使用して解答状況を保存しているので，端末やブラウザを変えた場合，cookieを削除した場合データが消えます．
     </div>
     <br>
     <div class="problems">
@@ -29,6 +42,11 @@
       <td><a target="_blank" href="./test2.html">テスト2</a> </td>
       <td>0</td>
       <td  class="issolved">test2</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="./shortestCode.html">shortest code</a> </td>
+      <td>100</td>
+      <td  class="issolved">shortest</td>
     </tr>
     </table>
     </div>
