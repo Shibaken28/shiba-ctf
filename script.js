@@ -22,9 +22,10 @@ async function sha256(str) {
     hashed.then(value => {
       log.textContent = "Last submission time " + Hour + ":" + Min + ":" + Sec;
       if(value==correct[problemID.textContent]){
-        alert("Correct !")
+        alert("Correct !");
+        $.cookie(problemID.textContent, 'correct', { expires: 36500,path:'/' });
       }else{
-        alert("Wrong answer!")
+        alert("Wrong answer!");
       }
     }).catch(err => {
       log.textContent = "unexpected error";

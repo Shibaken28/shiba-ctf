@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="ja">
-<header>
-<link rel="stylesheet" type="text/css" href="style.css">
-</header>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
     <div class="title">
         <h1>Shiba's CTF</h1>
     </div>
-    <div class="container">
-        あなたの総得点：0点
+    <div class="container" id="score">
+        
     </div>
     <br>
     <div class="problems">
-        <table>
-  <tr>
-    <td>問題名</td>
-    <td>得点</td>
-    <td>解答状況</td>
-  </tr>
-  <tr>
-    <td><a target="_blank" href="./chine.html">project homepage</a> </td>
-    <td>10</td>
-    <td>0</td>
-  </tr>
-  
-</table>
-
+    <table>
+    <tr>
+      <td>問題名</td>
+      <td>得点</td>
+      <td>解答状況</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="./chine.html">テスト</a> </td>
+      <td>0</td>
+      <td  class="issolved">test</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="./chine.html">テスト</a> </td>
+      <td>0</td>
+      <td  class="issolved">test</td>
+    </tr>
+    </table>
     </div>
+    <script>
+      setcolor(".issolved")
+
+      function setcolor(classname) {
+      var rank = $(classname);
+
+      var arr = [];
+      var i=0
+      $.each(rank, function(_, v){
+          if($.cookie($(v).text())){
+              $(v).css('background-color', '#FFC0CB');
+              $(v).val="solved"
+          }else{
+              $(v).val=""
+          }
+      });
+
+      /*
+      // CSSをつける
+      $.each(rank, function(_, v) {
+        var num = parseFloat($(v).text());
+        if (num == first) $(v).css('background-color', '#FFC0CB');
+        if (num == second) $(v).css('background-color', '#FFCC99');
+        if (num == third) $(v).css('background-color', '#C0F0FF');
+        if (num == fourth) $(v).css('background-color', '#E6E6FA');
+      });
+      */
+    }
+    </script>
 </body>
 </html>
