@@ -21,14 +21,14 @@
       <td>解答状況</td>
     </tr>
     <tr>
-      <td><a target="_blank" href="./chine.html">テスト</a> </td>
+      <td><a target="_blank" href="./test1.html">テスト1</a> </td>
       <td>0</td>
-      <td  class="issolved">test</td>
+      <td  class="issolved">test1</td>
     </tr>
     <tr>
-      <td><a target="_blank" href="./chine.html">テスト</a> </td>
+      <td><a target="_blank" href="./test2.html">テスト2</a> </td>
       <td>0</td>
-      <td  class="issolved">test</td>
+      <td  class="issolved">test2</td>
     </tr>
     </table>
     </div>
@@ -42,23 +42,14 @@
       var i=0
       $.each(rank, function(_, v){
           if($.cookie($(v).text())){
-              $(v).css('background-color', '#FFC0CB');
+              $(v).css('background-color', '#40EEEE');
               $(v).val="solved"
           }else{
               $(v).val=""
           }
       });
 
-      /*
-      // CSSをつける
-      $.each(rank, function(_, v) {
-        var num = parseFloat($(v).text());
-        if (num == first) $(v).css('background-color', '#FFC0CB');
-        if (num == second) $(v).css('background-color', '#FFCC99');
-        if (num == third) $(v).css('background-color', '#C0F0FF');
-        if (num == fourth) $(v).css('background-color', '#E6E6FA');
-      });
-      */
+      
     }
     </script>
 </body>

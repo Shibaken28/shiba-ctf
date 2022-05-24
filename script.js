@@ -2,7 +2,7 @@ var log = document.getElementById('timestamp');
 var input = document.getElementById('flag');
 var button = document.getElementById('submit');
 var problemID = document.getElementById('problemID');
-const correct = {"test":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b9a194d1d45"};
+const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b9a194d1d45","test2":"c845c0c47d085a3443211a88ab3bf58ea3b2b0c0c67fa69a9bec1446e3a690f3"};
 
 button.addEventListener('click', event => {
 async function sha256(str) {
