@@ -43,9 +43,7 @@
       $.each(rank, function(_, v){
           if($.cookie($(v).text())){
               $(v).css('background-color', '#40EEEE');
-              $(v).val="solved"
           }else{
-              $(v).val=""
           }
       });
 
