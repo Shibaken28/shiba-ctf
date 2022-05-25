@@ -4,6 +4,7 @@ var button = document.getElementById('submit');
 var problemID = document.getElementById('problemID');
 const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b9a194d1d45",
 "test2":"c845c0c47d085a3443211a88ab3bf58ea3b2b0c0c67fa69a9bec1446e3a690f3",
+"welcome":"ab2322a0c82f2ee8c51b53cc4bf2ea645ca3b13a3705456558fea08188da3bdf",
 "shortest":"793f75d9db176335166e3d8db7b9c902d17c8b7d05011ccf110e354488b0bb03",
 "Simple-Encoding":"e6a147e83d81c4368cfabc4914c5ff6581b328a45a60317690e77b3456a59de0",
 "RSA1":"bafefcc7367216294b5c462fa1860875da2a30d19c6049203cf69a9844380dba",
