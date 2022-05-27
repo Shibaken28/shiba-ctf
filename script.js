@@ -15,6 +15,7 @@ const DB=[
     [["./small-RSA.html"],["Small RSA"],[2],["Crypto,RSA"],["2022/05/25"],["small-RSA"]],
     [["./Neighboring-RSA.html"],["Neighboring RSA"],[4],["Crypto,RSA"],["2022/05/27"],["Neighboring-RSA"]],
     [["./Leaked-RSA.html"],["Leaked RSA"],[5],["Crypto,RSA"],["2022/05/27"],["Leaked-RSA"]],
+    [["./Leaked-RSA2.html"],["Leaked RSA 2"],[5],["Crypto,RSA"],["2022/05/28"],["Leaked-RSA2"]],
 ];
 var problemID = document.getElementById('problemID');
 
@@ -41,6 +42,7 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 "lingual":"2014e3092841d61af95c40fad910c330bef70de1ec3701ca613fd54985e631f9",
 "items":"46545cc042127c3bf2006d427eda0e19f8896fddbb15c4851939ca1c2f19e8ae",
 "randomized":"b8188e4563ab5e2b8a2181fa3d5c8d0226f0e02f6c3bc94d374a05f51780b7cb",
+"Leaked-RSA2":"e8ff830400de52424ff346440367500068f3aa6ec71246f247518ce4d6ad4771",
 };
 
 /*
