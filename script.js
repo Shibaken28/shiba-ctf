@@ -83,6 +83,9 @@ if (button!=null){
     hashed.then(value => {
       log.textContent = "Last submission time " + Hour + ":" + Min + ":" + Sec;
       if(value==correct[problemID.textContent]){
+        if($.cookie(problemID.textContent)){
+              $("form").css('background-color', '#40EE99');
+        }
         alert("Correct !");
         $.cookie(problemID.textContent, 'correct', { expires: 36500,path:'/' });
       }else{
