@@ -5,9 +5,10 @@ const DB=[
     [["./shortestCode.html"],["shortest code"],[100],["Misc"],["2022/05/25"],["shortest"]],
     [["./Art-01.html"],["Art=01"],[100],["Crypto,Puzzle"],["2022/05/27"],["Art-01"]],
     [["./lingual.html"],["1.5linghual"],[100],["Misc"],["2022/05/27"],["lingual"]],
-    [["./items.html"],["items"],[200],["Crypto"],["2022/05/28"],["items"]],
+    [["./randomized.html"],["Randomized?"],[100],["Crypto"],["2022/05/28"],["randomized"]],
+    [["./items.html"],["items"],[100],["Crypto"],["2022/05/28"],["items"]],
+    [["./rotatedQR.html"],["rotatedQR"],[150],["Crypto"],["2022/05/27"],["rotatedQR"]],
     [["./2D-Lagrange.html"],["2D Lagrange"],[200],["Crypto"],["2022/05/26"],["2D-Lagrange"]],
-    [["./rotatedQR.html"],["rotatedQR"],[200],["Crypto"],["2022/05/27"],["rotatedQR"]],
     [["./stol.html"],["stol"],[1],["Warmup"],["2022/05/27"],["stol"]],
     [["./Simple-Encoding.html"],["Simple Encoding"],[2],["Warmup"],["2022/05/25"],["Simple-Encoding"]],
     [["./just-RSA.html"],["Just RSA"],[3],["Crypto,RSA"],["2022/05/25"],["Just-RSA"]],
@@ -39,6 +40,7 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 "rotatedQR":"e15ef91e294552d1a3af8ec244de989f6a854d52741bbfdd89a9cb96801cdcec",
 "lingual":"2014e3092841d61af95c40fad910c330bef70de1ec3701ca613fd54985e631f9",
 "items":"46545cc042127c3bf2006d427eda0e19f8896fddbb15c4851939ca1c2f19e8ae",
+"randomized":"b8188e4563ab5e2b8a2181fa3d5c8d0226f0e02f6c3bc94d374a05f51780b7cb",
 };
 
 /*
