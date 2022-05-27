@@ -127,6 +127,7 @@
       var arr = [];
       var i=0
       $.each(rank, function(_, v){
+          $(v).text = ""
           if($.cookie($(v).text())){
               $(v).css('background-color', '#40EEEE');
           }else{
