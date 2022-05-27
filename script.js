@@ -9,6 +9,7 @@ const DB=[
     [["./items.html"],["items"],[100],["Crypto"],["2022/05/28"],["items"]],
     [["./rotatedQR.html"],["rotatedQR"],[150],["Crypto"],["2022/05/27"],["rotatedQR"]],
     [["./2D-Lagrange.html"],["2D Lagrange"],[200],["Crypto"],["2022/05/26"],["2D-Lagrange"]],
+    [["./SymmetryMathematics.html"],["Symmetry Mathematics"],[500],["Math,PPC"],["2022/05/28"],["Symmetry"]],
     [["./stol.html"],["stol"],[1],["Warmup"],["2022/05/27"],["stol"]],
     [["./Simple-Encoding.html"],["Simple Encoding"],[2],["Warmup"],["2022/05/25"],["Simple-Encoding"]],
     [["./Just-RSA.html"],["Just RSA"],[2],["Crypto,RSA"],["2022/05/25"],["Just-RSA"]],
@@ -45,6 +46,7 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 "items":"46545cc042127c3bf2006d427eda0e19f8896fddbb15c4851939ca1c2f19e8ae",
 "randomized":"b8188e4563ab5e2b8a2181fa3d5c8d0226f0e02f6c3bc94d374a05f51780b7cb",
 "Leaked-RSA2":"e8ff830400de52424ff346440367500068f3aa6ec71246f247518ce4d6ad4771",
+"Symmetry":"21a8f1193bc1426036ad56767b55eb3fcd1d17d6297511710503c7aed490b087",
 };
 
 /*
@@ -93,7 +95,7 @@ function build(){
         for(var i=0;i<DB.length;i++){
             add+="<tr>";
             add+="<td> <a target=\"_blank\" href=\""+DB[i][0]+"\">"+DB[i][1]+"</a> </td>";
-            add+="<td class=\"score\">"+DB[i][2]+"</td>";
+            add+="<td class=\"score\" >"+DB[i][2]+"</td>";
             add+="<td>"+DB[i][3]+"</td>";
             add+="<td>"+DB[i][4]+"</td>";
             add+="<td  class=\"issolved\">"+DB[i][5]+"</td>";
