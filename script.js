@@ -5,6 +5,7 @@ const DB=[
     [["./shortestCode.html"],["shortest code"],[100],["Misc"],["2022/05/25"],["shortest"]],
     [["./Art-01.html"],["Art=01"],[100],["Crypto,Puzzle"],["2022/05/27"],["Art-01"]],
     [["./lingual.html"],["1.5linghual"],[100],["Misc"],["2022/05/27"],["lingual"]],
+    [["./items.html"],["items"],[200],["Crypto"],["2022/05/28"],["items"]],
     [["./2D-Lagrange.html"],["2D Lagrange"],[200],["Crypto"],["2022/05/26"],["2D-Lagrange"]],
     [["./rotatedQR.html"],["rotatedQR"],[200],["Crypto"],["2022/05/27"],["rotatedQR"]],
     [["./stol.html"],["stol"],[1],["Warmup"],["2022/05/27"],["stol"]],
@@ -37,6 +38,7 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 "Art-01":"8f80ddfed80148c35092a888d6c8a51a870aac3a55204e4863a933fd58ee5b37",
 "rotatedQR":"e15ef91e294552d1a3af8ec244de989f6a854d52741bbfdd89a9cb96801cdcec",
 "lingual":"2014e3092841d61af95c40fad910c330bef70de1ec3701ca613fd54985e631f9",
+"items":"46545cc042127c3bf2006d427eda0e19f8896fddbb15c4851939ca1c2f19e8ae",
 };
 
 /*
