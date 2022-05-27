@@ -15,23 +15,25 @@
   </script>
 </head>
 <body>
-    <div id="problemID" style="display:none;">Simple-Encoding</div>
+    <div id="problemID" style="display:none;">stol</div>
     <div class="title">
-        <div class="item"><h1>Simple-Encoding</h1></div>
+        <div class="item"><h1>stol</h1></div>
     </div>
     <div class="container">
         <div class="problem">
-            次の文字列たちは，それぞれフラグの一部をエンコードしたものである．
-            <br>
-            ・c2N0ZntwaWds
-            <br>
-            ・65745f726163636f6f
-            <br>
-            ・?5@807@I0
-            <br>
-            ・cf26d99994e51330ba018eed9ca87e16
-            <br>
-            ヒント：上の文字列の中には不可逆暗号化されたものも混じっています．
+          暗号の世界では整数が扱いやすいので，しばしば文字列は整数に変換されます．よくある変換の例は次のようなものです．
+          <br>
+          ・各文字を8bitの文字コードで表す．Helloなら01001000,01100101,01101100,01101100,01101111．
+          <br>
+          ・それらを連結して一つの数とみなす．Helloなら，0100100001100101011011000110110001101111
+          <br>
+          ・例えば，十進数に直せば310939249775
+          <br>
+          プログラムでは，連結する部分をビットシフトを使って計算すると，簡単に表現することができます．
+          <br>
+          一つの実装例が<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/stol/encode.py">こちら</a>です．
+          <br>
+          では，12151826827777599595890579704058428747943038418754428555185303678077は，どんな文字列を整数に変換したものでしょうか．
         </div>
     </div>
     <br>
@@ -45,8 +47,5 @@
     <a class="top" href="./index.html">問題一覧</a>
     <script src="../script.js"></script>
 </body>
-
-
-
 
 </html>
