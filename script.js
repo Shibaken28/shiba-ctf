@@ -4,7 +4,7 @@ const DB=[
     [["./welcome.html"],["welcome"],[1],["Warmup"],["2022/05/25"],["welcome"]],
     [["./shortestCode.html"],["shortest code"],[100],["Misc"],["2022/05/25"],["shortest"]],
     [["./Art-01.html"],["Art=01"],[100],["Crypto,Puzzle"],["2022/05/27"],["Art-01"]],
-    [["./lingual.html"],["1.5linghual"],[100],["Misc"],["2022/05/27"],["lingual"]],
+    [["./lingual.html"],["1.5lingual"],[100],["Misc"],["2022/05/27"],["lingual"]],
     [["./randomized.html"],["Randomized?"],[100],["Crypto"],["2022/05/28"],["randomized"]],
     [["./items.html"],["items"],[100],["Crypto"],["2022/05/28"],["items"]],
     [["./rotatedQR.html"],["rotatedQR"],[150],["Crypto"],["2022/05/27"],["rotatedQR"]],
