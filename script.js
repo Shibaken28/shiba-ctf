@@ -1,7 +1,28 @@
+
+    // ディレクトリ，問題名，得点，ジャンル，追加日，ID
+const DB=[
+    [["./welcome.html"],["welcome"],[1],["Warmup"],["2022/05/25"],["welcome"]],
+    [["./shortestCode.html"],["shortest code"],[100],["Misc"],["2022/05/25"],["shortest"]],
+    [["./Art-01.html"],["Art=01"],[100],["Crypto,Puzzle"],["2022/05/27"],["Art-01"]],
+    [["./lingual.html"],["1.5linghual"],[100],["Misc"],["2022/05/27"],["lingual"]],
+    [["./2D-Lagrange.html"],["2D Lagrange"],[200],["Crypto"],["2022/05/26"],["2D-Lagrange"]],
+    [["./rotatedQR.html"],["rotatedQR"],[200],["Crypto"],["2022/05/27"],["rotatedQR"]],
+    [["./stol.html"],["stol"],[1],["Warmup"],["2022/05/27"],["stol"]],
+    [["./Simple-Encoding.html"],["Simple Encoding"],[2],["Warmup"],["2022/05/25"],["Simple-Encoding"]],
+    [["./just-RSA.html"],["Just RSA"],[3],["Crypto,RSA"],["2022/05/25"],["Just-RSA"]],
+    [["./small-RSA.html"],["Small RSA"],[2],["Crypto,RSA"],["2022/05/25"],["small-RSA"]],
+    [["./Neighboring-RSA.html"],["Neighboring RSA"],[4],["Crypto,RSA"],["2022/05/27"],["Neighboring-RSA"]],
+    [["./Leaked-RSA.html"],["Leaked RSA"],[5],["Crypto,RSA"],["2022/05/27"],["Leaked-RSA"]],
+];
+var problemID = document.getElementById('problemID');
+
+build();
+setup();
+
+
 var log = document.getElementById('timestamp');
 var input = document.getElementById('flag');
 var button = document.getElementById('submit');
-var problemID = document.getElementById('problemID');
 const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b9a194d1d45",
 "test2":"c845c0c47d085a3443211a88ab3bf58ea3b2b0c0c67fa69a9bec1446e3a690f3",
 "welcome":"ab2322a0c82f2ee8c51b53cc4bf2ea645ca3b13a3705456558fea08188da3bdf",
@@ -22,15 +43,16 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 echo 文字列 | sha256sum
 date "+%Y/%m/%d %H:%M:%S"
 */
+if (button!=null){
+  button.addEventListener('click', event => {
+  async function sha256(str) {
+      // Convert string to ArrayBuffer
+      const buff = new Uint8Array([].map.call(str, (c) => c.charCodeAt(0))).buffer;
+      // Calculate digest
+      const digest = await crypto.subtle.digest('SHA-256', buff);
+      return [].map.call(new Uint8Array(digest), x => ('00' + x.toString(16)).slice(-2)).join('');
+  }
 
-button.addEventListener('click', event => {
-async function sha256(str) {
-    // Convert string to ArrayBuffer
-    const buff = new Uint8Array([].map.call(str, (c) => c.charCodeAt(0))).buffer;
-    // Calculate digest
-    const digest = await crypto.subtle.digest('SHA-256', buff);
-    return [].map.call(new Uint8Array(digest), x => ('00' + x.toString(16)).slice(-2)).join('');
-}
 
     var now = new Date();
     var Hour = now.getHours();
@@ -51,7 +73,57 @@ async function sha256(str) {
       console.log(err);
     });
 
-});
+  });
+}
 
+function build(){
+    var target = "#build-table";
+    if ($(target).length>0){
+        var add = "";
+        add+="<tbody>";
+        add+="<tr> <td>問題名</td> <td>得点</td> <td>ジャンル</td> <td>追加日</td> <td>解答状況</td> </tr>";
+        for(var i=0;i<DB.length;i++){
+            add+="<tr>";
+            add+="<td> <a target=\"_blank\" href=\""+DB[i][0]+"\">"+DB[i][1]+"</a> </td>";
+            add+="<td class=\"score\">"+DB[i][2]+"</td>";
+            add+="<td>"+DB[i][3]+"</td>";
+            add+="<td>"+DB[i][4]+"</td>";
+            add+="<td  class=\"issolved\">"+DB[i][5]+"</td>";
+            add+="</tr>";
+        }
+        add+="</tbody>";
+        $(target).append(add);
+    }else{
+      var titleTarget = $(".titleName");
+      var name=""
+      for(var i=0;i<DB.length;i++){
+          if(DB[i][5]==problemID.textContent){
+            name = DB[i][1];
+          }
+      }
+      titleTarget[0].textContent = name+" shiba's CTF";
+      titleTarget[1].textContent = name;
+      //for(var i=0;i<titleTarget.length;i++){
+      //  titleTarget[i].textContent = name;
+      //}
+      $("#build-form").append("<form><input id=\"flag\" placeholder=\"Please enter the flag\" name=\"flag\" required maxlength=\"100\" size=\"100\"/><input type=\"text\" name=\"dummy\" style=\"display:none;\"><button id=\"submit\" type=\"button\" >submit</button><p id=\"timestamp\"></p></form><br><a class=\"top\" href=\"./index.html\">問題一覧</a>");
+    }
+}
 
-
+function setup() {
+    var name = $(".issolved");
+    var score = $(".score");
+    var myScore = $(".myScore");
+    if(name.length>0){
+      var s=0;
+      $.each(name, function(i, v){
+          if($.cookie($(v).text())){
+              $(v).css('background-color', '#40EEEE');
+              s+=parseInt(score[i].textContent);
+          }else{
+          }
+      });
+      console.log(s);
+      myScore[0].textContent="現在の得点："+s;
+    }
+}
