@@ -3,7 +3,6 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" type="text/css" href="../style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DTRX430E4"></script>
   <script>
@@ -34,125 +33,10 @@
 
     <br>
     <div class="problems">
-    <table>
-    <tr>
-      <td>問題名</td>
-      <td>得点</td>
-      <td>ジャンル</td>
-      <td>追加日</td>
-      <td>解答状況</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./welcome.html">welcome</a> </td>
-      <td class="score">1</td>
-      <td>Warmup</td>
-      <td>2022/05/25</td>
-      <td  class="issolved">welcome</td>
-    </tr>
-    
-    <tr>
-      <td><a target="_blank" href="./shortestCode.html">shortest code</a> </td>
-      <td class="score">100</td>
-      <td>Misc</td>
-      <td>2022/05/25</td>
-      <td  class="issolved">shortest</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./Art-01.html">Art=01</a> </td>
-      <td class="score">100</td>
-      <td>Crypto,Puzzle</td>
-      <td>2022/05/27</td>
-      <td  class="issolved">Art-01</td>
-    </tr>
-     <tr>
-      <td><a target="_blank" href="./lingual.html">1.5lingual</a> </td>
-      <td class="score">100</td>
-      <td>Misc</td>
-      <td>2022/05/27</td>
-      <td  class="issolved">1.5lingual</td>
-    </tr>  
-     <tr>
-      <td><a target="_blank" href="./2D-Lagrange.html">2D-Lagrange</a> </td>
-      <td class="score">200</td>
-      <td>Crypto</td>
-      <td>2022/05/26</td>
-      <td  class="issolved">2D-Lagrange</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./rotatedQR.html">rotatedQR</a> </td>
-      <td class="score">200</td>
-      <td>Crypto</td>
-      <td>2022/05/26</td>
-      <td  class="issolved">rotatedQR</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./stol.html">stol</a> </td>
-      <td class="score">1</td>
-      <td>Crypto,Warmup</td>
-      <td>2022/05/27</td>
-      <td  class="issolved">stol</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./Simple-Encoding.html">Simple-Encoding</a> </td>
-      <td class="score">2</td>
-      <td>Crypto,Warmup</td>
-      <td>2022/05/25</td>
-      <td  class="issolved">Simple-Encoding</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./Just-RSA.html">Just RSA</a> </td>
-      <td class="score">3</td>
-      <td>Crypto,RSA</td>
-      <td>2022/05/25</td>
-      <td  class="issolved">Just-RSA</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./small-RSA.html">small RSA</a> </td>
-      <td class="score">3</td>
-      <td>Crypto,RSA</td>
-      <td>2022/05/25</td>
-      <td  class="issolved">small-RSA</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./Neighboring-RSA.html">Neighboring RSA</a> </td>
-      <td class="score">4</td>
-      <td>Crypto,RSA</td>
-      <td>2022/05/27</td>
-      <td  class="issolved">Neighboring-RSA</td>
-    </tr>
-    <tr>
-      <td><a target="_blank" href="./Leaked-RSA.html">Leaked RSA</a> </td>
-      <td class="score">5</td>
-      <td>Crypto,RSA</td>
-      <td>2022/05/27</td>
-      <td  class="issolved">Leaked-RSA</td>
-    </tr>
+    <table  id="build-table">
     </table>
     </div>
-    <script>
-      build();
-      setup();
-      function build(){
-
-      }
-
-      function setup() {
-      var name = $(".issolved");
-      var score = $(".score");
-      var myScore = $(".myScore");
-
-      var s=0;
-      $.each(name, function(i, v){
-          if($.cookie($(v).text())){
-              $(v).css('background-color', '#40EEEE');
-              s+=parseInt(score[i].textContent);
-          }else{
-          }
-      });
-      console.log(s);
-      myScore[0].textContent="現在の得点："+s;
-      
-    }
-    </script>
+  <script src="../construct.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </body>
 </html>
