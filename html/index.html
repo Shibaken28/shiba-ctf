@@ -27,6 +27,10 @@
       <br>
       ・得点が1桁の問題は，ほぼ捻りがない基本問題になっています．入門，書いたコードのverifyなどに使ってください．
     </div>
+    <br>
+    <div class="container">
+      <div class="myScore">現在の得点：0 </div>
+    </div>
 
     <br>
     <div class="problems">
@@ -40,7 +44,7 @@
     </tr>
     <tr>
       <td><a target="_blank" href="./welcome.html">welcome</a> </td>
-      <td>1</td>
+      <td class="score">1</td>
       <td>Warmup</td>
       <td>2022/05/25</td>
       <td  class="issolved">welcome</td>
@@ -48,70 +52,70 @@
     
     <tr>
       <td><a target="_blank" href="./shortestCode.html">shortest code</a> </td>
-      <td>100</td>
+      <td class="score">100</td>
       <td>Misc</td>
       <td>2022/05/25</td>
       <td  class="issolved">shortest</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./Art-01.html">Art=01</a> </td>
-      <td>100</td>
+      <td class="score">100</td>
       <td>Crypto,Puzzle</td>
       <td>2022/05/27</td>
       <td  class="issolved">Art-01</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./2D-Lagrange.html">2D-Lagrange</a> </td>
-      <td>200</td>
+      <td class="score">200</td>
       <td>Crypto</td>
       <td>2022/05/26</td>
       <td  class="issolved">2D-Lagrange</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./rotatedQR.html">rotatedQR</a> </td>
-      <td>200</td>
+      <td class="score">200</td>
       <td>Crypto</td>
       <td>2022/05/26</td>
-      <td  class="issolved">rotated QR</td>
+      <td  class="issolved">rotatedQR</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./stol.html">stol</a> </td>
-      <td>1</td>
+      <td class="score">1</td>
       <td>Crypto,Warmup</td>
       <td>2022/05/27</td>
       <td  class="issolved">stol</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./Simple-Encoding.html">Simple-Encoding</a> </td>
-      <td>2</td>
+      <td class="score">2</td>
       <td>Crypto,Warmup</td>
       <td>2022/05/25</td>
       <td  class="issolved">Simple-Encoding</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./Just-RSA.html">Just RSA</a> </td>
-      <td>3</td>
+      <td class="score">3</td>
       <td>Crypto,RSA</td>
       <td>2022/05/25</td>
       <td  class="issolved">Just-RSA</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./small-RSA.html">small RSA</a> </td>
-      <td>3</td>
+      <td class="score">3</td>
       <td>Crypto,RSA</td>
       <td>2022/05/25</td>
       <td  class="issolved">small-RSA</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./Neighboring-RSA.html">Neighboring RSA</a> </td>
-      <td>4</td>
+      <td class="score">4</td>
       <td>Crypto,RSA</td>
       <td>2022/05/27</td>
       <td  class="issolved">Neighboring-RSA</td>
     </tr>
     <tr>
       <td><a target="_blank" href="./Leaked-RSA.html">Leaked RSA</a> </td>
-      <td>5</td>
+      <td class="score">5</td>
       <td>Crypto,RSA</td>
       <td>2022/05/27</td>
       <td  class="issolved">Leaked-RSA</td>
@@ -119,21 +123,23 @@
     </table>
     </div>
     <script>
-      setcolor(".issolved")
+      setcolor();
 
-      function setcolor(classname) {
-      var rank = $(classname);
+      function setcolor() {
+      var name = $(".issolved");
+      var score = $(".score");
+      var myScore = $(".myScore");
 
-      var arr = [];
-      var i=0
-      $.each(rank, function(_, v){
-          $(v).text = ""
+      var s=0;
+      $.each(name, function(i, v){
           if($.cookie($(v).text())){
               $(v).css('background-color', '#40EEEE');
+              s+=parseInt(score[i].textContent);
           }else{
           }
       });
-
+      console.log(s);
+      myScore[0].textContent="現在の得点："+s;
       
     }
     </script>
