@@ -7,17 +7,22 @@ const DB=[
     [["./lingual.html"],["1.5lingual"],[100],["Misc"],["2022/05/27"],["lingual"]],
     [["./randomized.html"],["Randomized?"],[100],["Crypto"],["2022/05/28"],["randomized"]],
     [["./items.html"],["items"],[100],["Crypto"],["2022/05/28"],["items"]],
+    [["./TheNumber.html"],["TheNumber"],[100],["Crypto,Puzzle"],["2022/05/28"],["TheNumber"]],
     [["./rotatedQR.html"],["rotatedQR"],[150],["Crypto"],["2022/05/27"],["rotatedQR"]],
     [["./2D-Lagrange.html"],["2D Lagrange"],[200],["Crypto"],["2022/05/26"],["2D-Lagrange"]],
     [["./SymmetryMathematics.html"],["Symmetry Mathematics"],[500],["Math,PPC"],["2022/05/28"],["Symmetry"]],
+    [["./mojicode.html"],["moji code"],[1],["Warmup"],["2022/05/28"],["mojicode"]],
+    [["./tobin.html"],["2bin"],[1],["Warmup"],["2022/05/28"],["tobin"]],
+    [["./bigbin.html"],["big bin"],[1],["Warmup"],["2022/05/28"],["bigbin"]],
     [["./stol.html"],["stol"],[1],["Warmup"],["2022/05/27"],["stol"]],
+    [["./MachinePower.html"],["Machine Power"],[2],["Warmup"],["2022/05/28"],["MachinePower"]],
     [["./Simple-Encoding.html"],["Simple Encoding"],[2],["Warmup"],["2022/05/25"],["Simple-Encoding"]],
-    [["./Just-RSA.html"],["Just RSA"],[2],["Crypto,RSA"],["2022/05/25"],["Just-RSA"]],
-    [["./small-RSA.html"],["Small RSA"],[2],["Crypto,RSA"],["2022/05/25"],["small-RSA"]],
-    [["./small-RSA2.html"],["Small RSA 2"],[3],["Crypto,RSA"],["2022/05/28"],["small-RSA2"]],
-    [["./Neighboring-RSA.html"],["Neighboring RSA"],[4],["Crypto,RSA"],["2022/05/27"],["Neighboring-RSA"]],
-    [["./Leaked-RSA.html"],["Leaked RSA"],[5],["Crypto,RSA"],["2022/05/27"],["Leaked-RSA"]],
-    [["./Leaked-RSA2.html"],["Leaked RSA 2"],[5],["Crypto,RSA"],["2022/05/28"],["Leaked-RSA2"]],
+    [["./Just-RSA.html"],["Just RSA"],[4],["Crypto,RSA"],["2022/05/25"],["Just-RSA"]],
+    [["./small-RSA.html"],["Small RSA"],[5],["Crypto,RSA"],["2022/05/25"],["small-RSA"]],
+    [["./small-RSA2.html"],["Small RSA 2"],[6],["Crypto,RSA"],["2022/05/28"],["small-RSA2"]],
+    [["./Neighboring-RSA.html"],["Neighboring RSA"],[6],["Crypto,RSA"],["2022/05/27"],["Neighboring-RSA"]],
+    [["./Leaked-RSA.html"],["Leaked RSA"],[7],["Crypto,RSA"],["2022/05/27"],["Leaked-RSA"]],
+    [["./Leaked-RSA2.html"],["Leaked RSA 2"],[7],["Crypto,RSA"],["2022/05/28"],["Leaked-RSA2"]],
 ];
 var problemID = document.getElementById('problemID');
 
@@ -47,6 +52,11 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 "randomized":"b8188e4563ab5e2b8a2181fa3d5c8d0226f0e02f6c3bc94d374a05f51780b7cb",
 "Leaked-RSA2":"e8ff830400de52424ff346440367500068f3aa6ec71246f247518ce4d6ad4771",
 "Symmetry":"21a8f1193bc1426036ad56767b55eb3fcd1d17d6297511710503c7aed490b087",
+"mojicode":"c0899c67b06613553fdb2fe03b50816f2d615b4a0cf2151cf11435c570581206",
+"tobin":"78c6a510b6e01d179e4265bd46ebe71ce89b90b9d13a0d3df43346c7c7452913",
+"bigbin":"ee76e76b70e0309f1409ab4331b683a1bae0b98a4e99450de8aae4ecdb133963",
+"MachinePower":"320e98f82cdf8d9c22c9fde511784698b69793b7f0239de9bf12a03967188d1b",
+"TheNumber":"e52854c92496c07c2c5c3176e2c97ad0c05b439fb697f55951f7cbeeef70dbc8",
 };
 
 /*
@@ -117,6 +127,9 @@ function build(){
       //  titleTarget[i].textContent = name;
       //}
       $("#build-form").append("<form><input id=\"flag\" placeholder=\"Please enter the flag\" name=\"flag\" required maxlength=\"100\" size=\"100\"/><input type=\"text\" name=\"dummy\" style=\"display:none;\"><button id=\"submit\" type=\"button\" >submit</button><p id=\"timestamp\"></p></form><br><a class=\"top\" href=\"./index.html\">問題一覧</a>");
+      if($.cookie(problemID.textContent)){
+            $("form").css('background-color', '#40EE99');
+      }
     }
 }
 
@@ -128,7 +141,7 @@ function setup() {
       var s=0;
       $.each(name, function(i, v){
           if($.cookie($(v).text())){
-              $(v).css('background-color', '#40EEEE');
+              $(v).css('background-color', '#40EE99');
               s+=parseInt(score[i].textContent);
           }else{
           }
