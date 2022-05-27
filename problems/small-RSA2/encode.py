@@ -1,6 +1,6 @@
 from Crypto.Util.number import bytes_to_long,getStrongPrime
 
-flag = b"sctf{The_str_was_created_to_get_the_length}"
+flag = b"?"
 m = bytes_to_long(flag)
 p = getStrongPrime(512)
 q = getStrongPrime(512)
