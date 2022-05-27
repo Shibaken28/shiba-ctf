@@ -45,6 +45,10 @@
 }
 
 
+.issolved{
+  visibility: hidden;
+}
+
 
 form {
   /* フォームをページの中央に配置 */
