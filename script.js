@@ -17,9 +17,11 @@ const DB=[
     [["./stol.html"],["stol"],[1],["Warmup"],["2022/05/27"],["stol"]],
     [["./MachinePower.html"],["Machine Power"],[2],["Warmup"],["2022/05/28"],["MachinePower"]],
     [["./Simple-Encoding.html"],["Simple Encoding"],[2],["Warmup"],["2022/05/25"],["Simple-Encoding"]],
+    [["./XOR-chain.html"],["XOR chain"],[3],["Crypto,Warmup"],["2022/05/30"],["XOR-chain"]],
     [["./Just-RSA.html"],["Just RSA"],[4],["Crypto,RSA"],["2022/05/25"],["Just-RSA"]],
     [["./small-RSA.html"],["Small RSA"],[5],["Crypto,RSA"],["2022/05/25"],["small-RSA"]],
     [["./small-RSA2.html"],["Small RSA 2"],[6],["Crypto,RSA"],["2022/05/28"],["small-RSA2"]],
+    [["./Big-RSA.html"],["Big RSA"],[6],["Crypto,RSA"],["2022/05/30"],["Big-RSA"]],
     [["./Neighboring-RSA.html"],["Neighboring RSA"],[6],["Crypto,RSA"],["2022/05/27"],["Neighboring-RSA"]],
     [["./Leaked-RSA.html"],["Leaked RSA"],[7],["Crypto,RSA"],["2022/05/27"],["Leaked-RSA"]],
     [["./Leaked-RSA2.html"],["Leaked RSA 2"],[7],["Crypto,RSA"],["2022/05/28"],["Leaked-RSA2"]],
@@ -57,6 +59,8 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 "bigbin":"ee76e76b70e0309f1409ab4331b683a1bae0b98a4e99450de8aae4ecdb133963",
 "MachinePower":"320e98f82cdf8d9c22c9fde511784698b69793b7f0239de9bf12a03967188d1b",
 "TheNumber":"e52854c92496c07c2c5c3176e2c97ad0c05b439fb697f55951f7cbeeef70dbc8",
+"Big-RSA":"dc38f7bbca1f6036d375956b8ca2bb9d8eeb0c98a90d5a36b8f7ea6ca7cb0525",
+"XOR-chain":"183c5b46fb62ef94803430d80cd0ca87e21950682e08e95829a79e4b2679dc49",
 };
 
 /*
