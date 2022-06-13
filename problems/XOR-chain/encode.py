@@ -1,7 +1,8 @@
 from Crypto.Util.number import bytes_to_long,getStrongPrime
 import random
 
-flag = b"sctf{trick_XOR_treat}"
+flag = b"?"
+
 m = bytes_to_long(flag)
 r = [0]
 N = 100
