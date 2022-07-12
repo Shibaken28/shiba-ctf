@@ -18,6 +18,7 @@ const DB=[
     [["./MachinePower.html"],["Machine Power"],[2],["Warmup"],["2022/05/28"],["MachinePower"]],
     [["./Simple-Encoding.html"],["Simple Encoding"],[2],["Warmup"],["2022/05/25"],["Simple-Encoding"]],
     [["./XOR-chain.html"],["XOR chain"],[3],["Crypto,Warmup"],["2022/05/30"],["XOR-chain"]],
+    [["./XOR-starter.html"],["XOR starter"],[3],["Crypto,Warmup"],["2022/07/13"],["XOR-starter"]],
     [["./Just-RSA.html"],["Just RSA"],[4],["Crypto,RSA"],["2022/05/25"],["Just-RSA"]],
     [["./small-RSA.html"],["Small RSA"],[5],["Crypto,RSA"],["2022/05/25"],["small-RSA"]],
     [["./small-RSA2.html"],["Small RSA 2"],[6],["Crypto,RSA"],["2022/05/28"],["small-RSA2"]],
@@ -65,6 +66,7 @@ const correct = {"test1":"75ad0e5e54549dee7a3a34fc5a98706b0db72205b56ce5a4e88e5b
 "TheNumber":"e52854c92496c07c2c5c3176e2c97ad0c05b439fb697f55951f7cbeeef70dbc8",
 "Big-RSA":"dc38f7bbca1f6036d375956b8ca2bb9d8eeb0c98a90d5a36b8f7ea6ca7cb0525",
 "XOR-chain":"183c5b46fb62ef94803430d80cd0ca87e21950682e08e95829a79e4b2679dc49",
+"XOR-starter":"ad7b463c9170e8826cfa9287da62ca1c98ec2cba3e6645086aca4aa5e8a91901",
 };
 
 /*
