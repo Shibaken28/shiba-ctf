@@ -1,157 +1,226 @@
-
-.title {
-    height: 100px;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-}
-
-.problems {
-    margin: 0 auto;
-    width: 900px;
-    padding: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid rgb(177, 177, 177);
-    border-radius: 1em;
-}
-
-
-.container {
-    margin: 0 auto;
-    width: 900px;
-    padding: 2em;
-    border: 3px solid rgb(177, 177, 177);
-    border-radius: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.top{
-    margin: 0 auto;
-    width: 100px;
-    display: flex;
-}
-
-
-
-.problem{
-    text-indent: 1rem;
-}
-
-#problem{
-    text-indent: 1rem;
-}
-
-
-.issolved{
-text-indent:1000%;
-white-space:nowrap;
-overflow:hidden;
-}
-
-
-form {
-  /* フォームをページの中央に配置 */
-    margin: 0 auto;
-    width: 900px;
-    /* フォームの輪郭 */
-    padding: 2em;
-    border: 3px solid rgb(177, 177, 177);
-    border-radius: 1em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
+/* Reset styles */
+* {
   margin: 0;
-}
-
-
-form li + li {
-  margin-top: 1em;
-}
-
-label {
-  /* 大きさと配置を統一 */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
-input,
-textarea {
-  /* すべてのテキストフィールドのフォント設定を一致させる
-     既定で、 textarea には等幅フォントが設定されている */
-  font: 1em sans-serif;
-
-  /* テキストフィールドの大きさを統一 */
-  width: 600px;
+  padding: 0;
   box-sizing: border-box;
-
-  /* フォームフィールド境界に合わせる */
-  border: 1px solid #999;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-input:focus,
-textarea:focus {
-  /* フォーカスのある要素を強調する */
-  border-color: #000;
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #eee;
 }
 
-textarea {
-  /* 複数行のテキストフィールドをラベルに揃える */
-  vertical-align: top;
-
-  /* テキスト入力に十分な空間を与える */
-  height: 5em;
+header {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button {
-  /* ボタンを他のテキストフィールドと同じ場所に置く */
-  padding-left: 100px; /* label 要素と同じサイズ */
+header h1 {
+  font-size: 2rem;
 }
 
-button {
-  /* このマージンは、ラベルとテキストフィールドの間のスペースと
-     おおよそ同じスペースを表す */
-  margin-left: .5em;
+.problem-list {
+  margin : 30px;
+  text-align: left;
 }
 
-html {
-  font-family: sans-serif;
+.problem-list ul {
+  list-style: none;
+  display: inline-block;
 }
 
-table {
-  border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
-  letter-spacing: 1px;
-  font-size: 0.8rem;
+.problem-list li {
+  display: inline-block;
+  margin: 10px;
 }
 
-td, th {
-  border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
-}
-
-th {
-  background-color: rgb(235,235,235);
-}
-
-td {
-  text-align: center;
-}
-
-tr:nth-child(even) td {
-  background-color: rgb(250,250,250);
-}
-
-tr:nth-child(odd) td {
-  background-color: rgb(245,245,245);
-}
-
-caption {
+.problem-link {
+  display: flex;
   padding: 10px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  font-size: larger;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+.problem-link:hover {
+  background-color: #7a7a7d;
+  color: #fff;
+}
+
+.problem-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.problem {
+  background-color: white;
+  width: 70%;
+  max-height: 80%;
+  max-width: 800px;
+  overflow-y: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 101;
+}
+
+.problem-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.problem-id {
+  display: none;
+}
+
+.problem-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.answer-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.answer-input {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.answer-button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #5fa1b1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.answer-button:hover {
+  background-color: #428b97;
+}
+
+.answer-message {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+
+.answer-message.correct {
+  animation-name: animate-correct;
+}
+
+.answer-message.wrong {
+  animation-name: animate-wrong;
+}
+
+
+@keyframes animate-correct {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate-wrong {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+.close-button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.close-button:hover {
+  background-color: #999;
+}
+
+/* スクロールバー非表示 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+
+
+
+
+
+.solved {
+  background-color: #5bd95b;
+}
+

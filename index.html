@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title class="titleName">shiba's CTF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DTRX430E4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9DTRX430E4');
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sevillana&display=swap'); </style>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+    <header>
+      <h1>Shiba CTF Gym</h1>
+    </header>
+    <div class="problem-list">
+      <ul id="problem-list"></ul>
+    </div>
+    <div class="problem-container" style="display: none;">
+      <div class="problem">
+        <h2 class="problem-title"></h2>
+        <h2 class="problem-id" hidden = "true" ></h2>
+        <div class="problem-description"></div>
+        <form class="answer-form">
+          <input type="text" class="answer-input" placeholder="Answer">
+          <button type="submit" class="answer-button">Submit</button>
+        </form>
+        <div class="answer-message" style="display: none;"></div>
+        <button class="close-button">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
