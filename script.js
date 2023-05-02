@@ -2,53 +2,13 @@
 const problems = {
   problem1: {
     title: "welcome",
-    description: "このwebサイトはgithubPagesを使用しています． <br> ソースコードは<a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf\">Github</a>で公開されています．",
+    description: "ようこそshibe CTF Gymへ！<br>このwebサイトはGitHub Pagesを使用しています． <br> ソースコードは<a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf\">Github</a>で公開されています．",
     flag: "ab2322a0c82f2ee8c51b53cc4bf2ea645ca3b13a3705456558fea08188da3bdf",
-    point: 100
-  },
-  problem2: {
-    title: "Hi",
-    description: "This is the description for problem 2.",
-    flag: "4cc2a66097cda9d682fa4f483aad50dad996d6d336c0bac8514d9203fc41188f",
-    point: 100
-  },
-  problem3: {
-    title: "test",
-    description: "This is the description for problem 2.",
-    flag: "4cc2a66097cda9d682fa4f483aad50dad996d6d336c0bac8514d9203fc41188f",
-    point: 100
-  },
-  problem4: {
-    title: "test",
-    description: "This is the description for problem 2.",
-    flag: "4cc2a66097cda9d682fa4f483aad50dad996d6d336c0bac8514d9203fc41188f",
-    point: 100
-  },
-  problem5: {
-    title: "test",
-    description: "This is the description for problem 2.",
-    flag: "4cc2a66097cda9d682fa4f483aad50dad996d6d336c0bac8514d9203fc41188f",
-    point: 100
-  },
-  problem6: {
-    title: "test",
-    description: "This is the description for problem 2.",
-    flag: "4cc2a66097cda9d682fa4f483aad50dad996d6d336c0bac8514d9203fc41188f",
-    point: 100
-  },
-  problem7: {
-    title: "test",
-    description: "This is the description for problem 2.",
-    flag: "4cc2a66097cda9d682fa4f483aad50dad996d6d336c0bac8514d9203fc41188f",
-    point: 100
-  },
-  problem8: {
-    title: "test",
-    description: "This is the description for problem 2.",
-    flag: "4cc2a66097cda9d682fa4f483aad50dad996d6d336c0bac8514d9203fc41188f",
-    point: 100
+    point: 1,
   },
 };
+
+
 
 
 const problemListElement = document.getElementById("problem-list");
@@ -135,7 +95,7 @@ $('.answer-form').submit(function(event) {
   if (hash === problems[problem].flag) {
     updateSolvedStatus();
     // 正解の場合
-    $.cookie(problem, 'solved'); // cookieに解答状況を記録
+    $.cookie(problem, 'solved', {expires: 100000}); // cookieに解答状況を記録
     $(this).closest('.problem').find('.answer-message').text('Correct!').css('color', 'green').show(); // 正解メッセージを表示
     $(this).closest('.problem').find('.answer-message').addClass('correct'); 
     setTimeout(function() {
