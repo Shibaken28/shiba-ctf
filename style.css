@@ -146,6 +146,8 @@ header h1 {
 
 .answer-message.correct {
   animation-name: animate-correct;
+  transform-origin: center;
+
 }
 
 .answer-message.wrong {

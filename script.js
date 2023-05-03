@@ -1,12 +1,19 @@
 
 const problems = {
-  problem1: {
+  welcome: {
     title: "welcome",
     description: "ようこそshibe CTF Gymへ！<br>このwebサイトはGitHub Pagesを使用しています． <br> ソースコードは<a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf\">Github</a>で公開されています．",
     flag: "ab2322a0c82f2ee8c51b53cc4bf2ea645ca3b13a3705456558fea08188da3bdf",
     point: 1,
   },
+  problem2: {
+    title: "welcome2",
+    description: "",
+    flag: "ab2322a0c82f2ee8c51b53cc4bf2ea645ca3b13a3705456558fea08188da3bdf",
+    point: 1,
+  },
 };
+
 
 
 
@@ -66,6 +73,7 @@ $(function() {
   // 閉じるボタンがクリックされた時の処理
   $('.close-button').on('click', function() {
     $('.problem-container').fadeOut(500); // 0.5秒かけて非表示にするアニメーション
+    $('.problem').find('.answer-message').text(''); // メッセージを空にする
     $('.problem').animate({
       'top': '-100%'
     }, 500); // 0.5秒かけて上にアニメーションさせて非表示にする
@@ -74,12 +82,14 @@ $(function() {
   // 問題領域の外側をクリックした時の処理
   $('.problem-container').on('click', function(e) {
     if ($(e.target).hasClass('problem-container')) {
+      $('.problem').find('.answer-message').text(''); // メッセージを空にする
       $('.problem-container').fadeOut(500); // 0.5秒かけて非表示にするアニメーション
       $('.problem').animate({
         'top': '-100%'
       }, 500); // 0.5秒かけて上にアニメーションさせて非表示にする
     }
   });
+
 });
 
 
@@ -90,24 +100,18 @@ $('.answer-form').submit(function(event) {
   const problem = $(this).closest('.problem-container').find('.problem-id').text().replace("\n", "");
   const answer = $(this).find('.answer-input').val();
   var hash = CryptoJS.SHA256(answer).toString();
-  console.log(hash);
-  console.log(problem);
+  $(this).closest('.problem').find('.answer-message').removeClass('wrong');
+  $(this).closest('.problem').find('.answer-message').removeClass('correct');
   if (hash === problems[problem].flag) {
     updateSolvedStatus();
     // 正解の場合
     $.cookie(problem, 'solved', {expires: 100000}); // cookieに解答状況を記録
     $(this).closest('.problem').find('.answer-message').text('Correct!').css('color', 'green').show(); // 正解メッセージを表示
     $(this).closest('.problem').find('.answer-message').addClass('correct'); 
-    setTimeout(function() {
-      $(this).closest('.problem').find('.answer-message').removeClass('correct');
-    }, 500);
   } else {
     // 不正解の場合
     $(this).closest('.problem').find('.answer-message').text('Wrong answer. Please try again.').css('color', 'red').show(); // 不正解メッセージを表示
     $(this).closest('.problem').find('.answer-message').addClass('wrong'); 
-    setTimeout(function() {
-      $(this).closest('.problem').find('.answer-message').removeClass('wrong');
-    }, 500);
   }
 })
 
