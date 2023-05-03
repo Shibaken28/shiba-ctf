@@ -74,17 +74,17 @@ const problems = {
   },
   AES: {
     title: "iv",
-    description: "Do you know this?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
+    description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
     flag: "e713df524228168d6c56be2883ce92993ffa85c9ae63924c11a3b4f97d5e9b7d",
-    point: 3,
+    point: 2,
   },
-  t1: {
-    title: "twisted 1",
-    description: "63324e305a6e7433623364664e3267784e563970633139746556396d4e485977636a45334d3138314d47356e66513d3d",
-    flag: "2b87a63b5732a27ba6feff0e12e895f4cecba102329a335f681344cc881c6837",
-    point: 3,
+  long2bytes: {
+    title: "long 2 bytes",
+    description: "<a target=\"_blank\" href=\"https://pycryptodome.readthedocs.io/en/latest/index.html\">pycryptodome</a> ライブラリのlong_to_bytes関数を知っていますか<br>1279736731193177234995154651896954849329117386600140361605729277808417294476644446533121189156265083663343198097886984854368748206461<br>P.S. どのような原理で変換されているかを確認してみましょう",
+    flag: "fa63e93452a3b53f65e58bbf3e65e640347dff1f101cdd04af7c26bebeb2746a",
+    point: 2,
   },
-  t1: {
+  lagrange: {
     title: "2D Lagrange",
     description: "二次関数を使って暗号化をしてみました．<br> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/encode.py\">encode.py</a> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/output.txt\">output.txt</a>",
     flag: "",
