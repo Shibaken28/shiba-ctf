@@ -103,6 +103,7 @@ header h1 {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
+  word-break: break-all;
 }
 
 .answer-form {
@@ -147,7 +148,6 @@ header h1 {
 .answer-message.correct {
   animation-name: animate-correct;
   transform-origin: center;
-
 }
 
 .answer-message.wrong {

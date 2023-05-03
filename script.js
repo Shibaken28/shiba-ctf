@@ -6,14 +6,97 @@ const problems = {
     flag: "ab2322a0c82f2ee8c51b53cc4bf2ea645ca3b13a3705456558fea08188da3bdf",
     point: 1,
   },
-  problem2: {
-    title: "welcome2",
-    description: "",
-    flag: "ab2322a0c82f2ee8c51b53cc4bf2ea645ca3b13a3705456558fea08188da3bdf",
+  r1: {
+    title: "radix 1",
+    description: "次の10進数を2進数に変換してください．<h2>18</h2>答えをsctf{}で囲んで提出してください",
+    flag: "f352fd85b34886496aef938d08c2b60cd9cda3870768042617975c06b86ca3a3",
     point: 1,
   },
+  r2: {
+    title: "radix 2",
+    description: "次の10進数を2進数に変換してください．<h2>13579</h2>答えをsctf{}で囲んで提出してください．",
+    flag: "0e98d4832885603bb28701e442290da6b213d4df12960f66566b38f342162516",
+    point: 1,
+  },
+  r3: {
+    title: "radix 3",
+    description: "次の2進数を10進数に変換してください．<h2>10111</h2>答えをsctf{}で囲んで提出してください．",
+    flag: "d0c42c7d44a594512c1aad0d7cc7604e9039557754c4254d4a3d9f687949bf50",
+    point: 1,
+  },
+  r4: {
+    title: "radix 4",
+    description: "次の2進数を10進数に変換してください．<h2>1100110010101010</h2>答えをsctf{}で囲んで提出してください．",
+    flag: "7e2d05875d22552e03e80025c36930eb5ba187df200c09afe00ecc6ba804d70d",
+    point: 1,
+  },
+  r5: {
+    title: "radix 5",
+    description: "次の16進数を10進数に変換してください．<h2>3b</h2>答えをsctf{}で囲んで提出してください．",
+    flag: "5ebcd416e47a9c5982600e2edf873c6b18fce6e8ead904a86a3e41b81bf8ca72",
+    point: 1,
+  },
+  r6: {
+    title: "radix 6",
+    description: "「a」の文字コードは10進数で97です．これを16進数に直してください．<br>答えをsctf{}で囲んで提出してください．",
+    flag: "72b92f7c24d51fffed5022318b39e39e9bd65f4c484e67b798c8f66a272b0b4c",
+    point: 1,
+  },
+  r7: {
+    title: "radix 7",
+    description: "次の9進数で表された数を10進数に変換してください．<h2>8128</h2>答えをsctf{}で囲んで提出してください．",
+    flag: "8990b3a5a29c7d80b94b05134542346c69c4fcf9ce5a2e57b75902a4c60baf94",
+    point: 1,
+  },
+  r8: {
+    title: "radix 8",
+    description: "1の後ろに0が64個並んだ数を2進数と見たとき，その値を10進数に変換してください．答えをsctf{}で囲んで提出してください．",
+    flag: "27837e6161144e800bc112f02984af37e1a0392cfc079101609d27dd23cf04e8",
+    point: 1,
+  },
+  numbers: {
+    title: "Numbers",
+    description: "115, 99, 116, 102, 123, 78, 117, 109, 98, 101, 114, 115, 95, 97, 114, 101, 95, 97, 95, 99, 111, 109, 109, 111, 110, 95, 108, 97, 110, 103, 117, 97, 103, 101, 125",
+    flag: "bee90dc6e18e563c8f39766710dbcdf605109acda1397f665d54a7f349013201",
+    point: 2,
+  },
+  Romantic: {
+    title: "Romantic Cipher",
+    description: "eofr{wuymsgd3_d0y4zfuo}",
+    flag: "dcef058ed7c93dd464f93412bc3f1d85a78db8fe260cb234f5c7bd7132f50632",
+    point: 2,
+  },
+  SOS: {
+    title: "SOS",
+    description: ".-.. .. -.-. . -. ... .<br>答えをsctf{}で囲んで提出してください．",
+    flag: "8c8062228f8efadcde54ac9f552cc1c0391e712ae01b3ba83560937aea365b97",
+    point: 2,
+  },
+  AES: {
+    title: "iv",
+    description: "Do you know this?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
+    flag: "e713df524228168d6c56be2883ce92993ffa85c9ae63924c11a3b4f97d5e9b7d",
+    point: 3,
+  },
+  t1: {
+    title: "twisted 1",
+    description: "63324e305a6e7433623364664e3267784e563970633139746556396d4e485977636a45334d3138314d47356e66513d3d",
+    flag: "2b87a63b5732a27ba6feff0e12e895f4cecba102329a335f681344cc881c6837",
+    point: 3,
+  },
+  t1: {
+    title: "2D Lagrange",
+    description: "二次関数を使って暗号化をしてみました．<br> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/encode.py\">encode.py</a> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/output.txt\">output.txt</a>",
+    flag: "",
+    point: 100,
+  },
+  next: {
+    title: "coming soon ?",
+    description: "作者のやる気が出ると問題が追加されます",
+    flag: "",
+    point: 0,
+  },
 };
-
 
 
 
