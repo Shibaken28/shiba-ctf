@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
@@ -19,6 +18,38 @@ header {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+.search-bar {
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 8px 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  margin-left: 16px;
+  width: 100%;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar svg {
+  fill: #888;
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+}
+
 
 header h1 {
   font-size: 2rem;
@@ -218,11 +249,6 @@ header h1 {
   background-color: transparent;
 }
 
-
-
-
-
 .solved {
   background-color: #5bd95b;
 }
-

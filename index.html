@@ -10,17 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
-    };
-    </script>
     <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sevillana&display=swap'); </style>
-    <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DTRX430E4"></script>
     <script>
@@ -32,10 +22,22 @@
     <link rel="stylesheet" type="text/css" href="./style/style.css">
   </head>
   <body>
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
     <header>
       <h1>Shiba CTF Gym</h1>
-      <h3>ver. 0.0.1 flag format is: sctf{}. There is no scoreboard, and there is no quality! Just quantity over quality</h3>
+      <h3>ver. 0.0.1 flag format is: sctf{}.</h3>
+      暗号に関する問題集です．点数が極端に小さい問題は基本問題，100点以上の問題は応用問題です．
     </header>
+    <input type="text" id="search-bar" class="search-bar" placeholder="Search by substring or tag...">
     <div class="problem-list">
       <ul id="problem-list"></ul>
     </div>
