@@ -1,7 +1,7 @@
 from Crypto.Util.number import bytes_to_long,getPrime
 from random import getrandbits
 
-flag = b"sctf{C0mm0n_N_15_0n3_0f_7h3_m057_345y_7o_f@c70r1z3_pr1m3_f@c70r5}"
+flag = b"?"
 m = bytes_to_long(flag)
 p = getPrime(1024)
 q = getPrime(1024)
