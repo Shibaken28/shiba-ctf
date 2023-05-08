@@ -11,7 +11,7 @@
 ## 更新履歴
 - 2023/5/3 デザインを大幅に変更
 - 2023/5/8 検索機能追加
-- 2023/5/9 問題「Emoji cipher」「math classシリーズ」追加
+- 2023/5/9 問題追加
 
 ## welcome問題
 welcome問題のフラグは`sctf{welcome_to_shiba_ctf}`です．

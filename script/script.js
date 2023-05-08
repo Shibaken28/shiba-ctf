@@ -295,6 +295,17 @@ I used many RSA.
     tag: ["RSA"],
     point: 200
   },
+  RSA5: {
+    title: "Unbalance RSA",
+    description:`
+This RSA has some strong primes, so it can't be broken by factoring N.
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Unbalance-RSA/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Unbalance-RSA/output.txt">output.txt</a>`,
+    flag: "ead54ed475a9fa818448330742518c4863a7c2fd34f04adfe21ae3d9d9e06104",
+    tag: ["RSA"],
+    point: 200
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
