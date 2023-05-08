@@ -78,7 +78,7 @@ const problems = {
   cls3: {
     title: "No meaning",
     description: "qlhzzoq qodjfsz hsf fxqsidroex afrjewz rjhr jhyf gffx pzfw ves qfxrpsofz re zfqpsf zfqsfr afzzhufz. rjfzf qodjfsz hsf ghzfw ex ahrjfahroqhl hluesorjaz, rshxzvesaoxu dlhoxrfcr oxre pxsfhwhglf qodjfsrfcr, sfhwhglf exli gi rjezf korj rjf wfqsidroex mfi. fchadlfz ev qlhzzoq qodjfsz oxqlpwf rjf qhfzhs qodjfs, kjoqj sfdlhqfz fhqj lfrrfs ox rjf dlhoxrfcr korj h vocfw xpagfs ev dezoroexz wekx rjf hldjhgfr; rjf youfxfsf qodjfs, kjoqj pzfz aplrodlf qhfzhs qodjfsz ghzfw ex h mfikesw; rjf dlhivhos qodjfs, kjoqj fxqsidrz dhosz ev lfrrfsz pzoxu h 5c5 usow; rjf shol vfxqf qodjfs, kjoqj sfhsshxufz dlhoxrfcr lfrrfsz; hxw rjf fxouah ahqjoxf, kjoqj khz vhaepzli qshqmfw gi hllofw qewfgsfhmfsz wpsoxu keslw khs oo. gi rjf khi, jfsf oz vlhu: zqrv{dlhoxrfcr_lfrrfsz_zpgzrorprfw_korj_wovvfsfxr_qodjfsrfcr_lfrrfsz}",
-    flag: "1dd71111c8e117636c7078446abedc3e81e1abbb812f716ba04e67d9ab52a082",
+    flag: "3539859e4c5866b2607175d9399892753aa5287cfb21fa4591e1776cc8908c7e",
     point: 30,
   },
   cls4: {
