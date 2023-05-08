@@ -231,8 +231,20 @@ $$
 $$
 ` ,
     flag: "ad7b463c9170e8826cfa9287da62ca1c98ec2cba3e6645086aca4aa5e8a91901",
-    tag: ["binary"],
+    tag: ["binary","XOR"],
     point: 70,
+  },
+  XOR2: {
+    title: "XOR XOR XOR",
+    description: 
+`
+XOR, XOR, XOR, and XOR
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/XORXORXOR/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/XORXORXOR/output.txt">output.txt</a>
+`,
+    flag: "58c5a784c6ee754206843c730eaaeb63bcf5b5843729caa318647fa17a3fa57e",
+    tag: ["XOR","binary"],
+    point: 100
   },
   RSA1: {
     title: "Each RSA",
