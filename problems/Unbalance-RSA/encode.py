@@ -1,7 +1,7 @@
 from gmpy2 import iroot
 from Crypto.Util.number import long_to_bytes, bytes_to_long, getPrime
 
-m = bytes_to_long(b"sctf{sti11_we4k_rs@}")
+m = bytes_to_long(b"?")
 b = [25, 25, 25, 25, 25, 25, 25, 256, 256, 512] 
 ps = []
 e = 65537
