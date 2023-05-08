@@ -198,6 +198,13 @@ const problems = {
     tag: ["math","PPC"],
     point: 30,
   },
+  math5: {
+    title : "Math Class 5",
+    description: "次の式を2つの数の最大公約数はいくつですか． <br> 14930888045225624011<br> 8204203643581470607<br> 答えをそのままsctf{}で囲んで提出してください．",
+    flag: "aaff34dba91f3f5d16d1f1da0313a04ba54ed5e700f2a70f8767b22a1b445e82",
+    tag: ["math","PPC"],
+    point: 30,
+  },
   RSA0: {
     title: "RSA starter",
     description:`
@@ -262,6 +269,17 @@ RSA but it's common m,N
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/common-N-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/common-N-RSA/output.txt">output.txt</a>`,
     flag: "ab9e39bbacf42d0428c1b65581c62b0788933c9acf04d97d5e3dead118e6dd57",
+    tag: ["RSA"],
+    point: 200
+  },
+  RSA4: {
+    title: "Many RSA",
+    description:`
+I used many RSA.
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/many-RSA/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/many-RSA/output.txt">output.txt</a>`,
+    flag: "f8bdfef5e0f048a2e5cb2d9ea4055b5446cc4be35ebd26e5ab7a202213b17735",
     tag: ["RSA"],
     point: 200
   },
