@@ -99,12 +99,6 @@ const problems = {
     flag: "b26cb5a2cf9706ab1bc1db5d60ac875307118593e5117852c6d460b2c9e25443",
     point: 20,
   },
-  mdn3: {
-    title: "AES starter",
-    description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
-    flag: "e713df524228168d6c56be2883ce92993ffa85c9ae63924c11a3b4f97d5e9b7d",
-    point: 20,
-  },
   mdn4: {
     title: "Compression",
     description: "c2N0ZntiYXNlNjRfZW5jMGRlZF9zN3JpbmdfMTVfYmVpbmdfb25lfQ==",
@@ -129,12 +123,6 @@ const problems = {
     flag: "32f1ef993950aba91e7fc65a0728c5717cf83c2cd1d99d0838fbd5cad47a2a7b",
     point: 30,
   },
-  mdn8: {
-    title: "http",
-    description: "sctf%7B%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%A7%E3%82%82ok%7D",
-    flag: "02bef8e99505357ff8dca270fee051da6927994013aeedd52308e430cf922887",
-    point: 20,
-  },
   mdn9: {
     title : "Emoji cipher",
     description: "🍳🍣🍴🍦🍻🌳🍭🌰🍪🌱🍟🍣🍯🍭🌳🍟🍦🍲🌰🍭🍟🍪🌴🍰🍡🍮🍽",
@@ -143,14 +131,16 @@ const problems = {
     point: 30,
   },
   mdn8: {
-    title: "RSA starter",
-    description:`
-RSA暗号の復元をしましょう．
-<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/output.txt">output.txt</a>`,
-    flag: "bafefcc7367216294b5c462fa1860875da2a30d19c6049203cf69a9844380dba",
-    tag: ["RSA"],
-    point: 70
+    title: "http",
+    description: "sctf%7B%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%A7%E3%82%82ok%7D",
+    flag: "02bef8e99505357ff8dca270fee051da6927994013aeedd52308e430cf922887",
+    point: 20,
+  },
+  mdn3: {
+    title: "AES starter",
+    description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
+    flag: "e713df524228168d6c56be2883ce92993ffa85c9ae63924c11a3b4f97d5e9b7d",
+    point: 30,
   },
   Equ1: {
     title : "Equation 1",
@@ -180,6 +170,44 @@ RSA暗号の復元をしましょう．
     tag: ["math","PPC"],
     point: 70,
   },
+  math1: {
+    title : "Math Class 1",
+    description: "次の値はいくつですか．<br> $$1+2+3+4+\\cdots+2022 + 2023$$ <br> 答えをそのままsctf{}で囲んで提出してください．",
+    flag: "e3ad583e69dc5d3cbd53bf56709bbd0df46b5f00df73a357e0d6331dcf94c85b",
+    tag: ["math","PPC"],
+    point: 10,
+  },
+  math2: {
+    title : "Math Class 2",
+    description: "次の値はいくつですか．<br> $$1+2+3+4+\\cdots+10^{12}$$ <br> 答えをそのままsctf{}で囲んで提出してください．",
+    flag: "05f8debda8263ece9b6d0bb231543c1076f1ea85cc398ccecdde32b1352d4101",
+    tag: ["math","PPC"],
+    point: 20,
+  },
+  math3: {
+    title : "Math Class 3",
+    description: "次の値の下$10$桁はいくつですか．<br>$$ 8128^{123456789}$$ <br> 答えをそのままsctf{}で囲んで提出してください．",
+    flag: "bd8e2953685cacfeb5095d3d1b4e233b2edceb9ca81af9014a38a65ac6e65e22",
+    tag: ["math","PPC"],
+    point: 30,
+  },
+  math4: {
+    title : "Math Class 4",
+    description: "次の式を満たす最小の自然数$x$はいくつですか． <br>$$29x \\equiv 1 \\pmod{157} $$ <br> 答えをそのままsctf{}で囲んで提出してください．",
+    flag: "2fe1e1b695854329083bb79ff7a0fbf42c3bcba85bc771f175bb78a65585b26b",
+    tag: ["math","PPC"],
+    point: 30,
+  },
+  RSA0: {
+    title: "RSA starter",
+    description:`
+RSA暗号の復元をしましょう．
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/output.txt">output.txt</a>`,
+    flag: "bafefcc7367216294b5c462fa1860875da2a30d19c6049203cf69a9844380dba",
+    tag: ["RSA"],
+    point: 70
+  },
   XOR: {
     title : "XOR starter",
     description:`
@@ -194,7 +222,7 @@ $$
     \\end{aligned}
 \\right.
 $$
-` ,    
+` ,
     flag: "ad7b463c9170e8826cfa9287da62ca1c98ec2cba3e6645086aca4aa5e8a91901",
     tag: ["binary"],
     point: 70,
