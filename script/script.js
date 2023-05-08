@@ -135,6 +135,13 @@ const problems = {
     flag: "02bef8e99505357ff8dca270fee051da6927994013aeedd52308e430cf922887",
     point: 20,
   },
+  mdn9: {
+    title : "Emoji cipher",
+    description: "🍳🍣🍴🍦🍻🌳🍭🌰🍪🌱🍟🍣🍯🍭🌳🍟🍦🍲🌰🍭🍟🍪🌴🍰🍡🍮🍽",
+    flag: "20a87bdea693654cdff92ca9e05c39e0391a337c235280aa010d8ffca2061edf",
+    tag: [],
+    point: 30,
+  },
   mdn8: {
     title: "RSA starter",
     description:`
