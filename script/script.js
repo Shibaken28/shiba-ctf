@@ -306,6 +306,16 @@ This RSA has some strong primes, so it can't be broken by factoring N.
     tag: ["RSA"],
     point: 200
   },
+  RSA6: {
+    title: "Cut RSA",
+    description:`First, tear p and q in half. Next, attach them together.
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/cut-RSA/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/cut-RSA/output.txt">output.txt</a>`,
+    flag: "519737cfafd7918e35372d793d1301a7ad8d8cb84b3e0380a89d471a8c95fca0",
+    tag: ["RSA"],
+    point: 200
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
