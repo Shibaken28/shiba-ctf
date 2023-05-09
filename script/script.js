@@ -364,11 +364,19 @@ function buildProblemList(problemList) {
     const linkElement = document.createElement("a");
     linkElement.setAttribute("href", "#");
     linkElement.setAttribute("class", "problem-link");
-    // problem linkをtagによって色分けする
-    if (problem.tag) {
-      for (const tag of problem.tag) {
-        linkElement.classList.add("tag-" + tag);
-      }
+    // problem linkをpointによって色分けする
+    if (problem.point < 10) {
+      linkElement.setAttribute("class", "problem-link diff-baby");
+    } else if (problem.point < 100) {
+      linkElement.setAttribute("class", "problem-link diff-warmup");
+    } else if (problem.point < 300) {
+      linkElement.setAttribute("class", "problem-link diff-easy");
+    } else if (problem.point < 500) {
+      linkElement.setAttribute("class", "problem-link diff-medium");
+    } else if (problem.point < 1000) {
+      linkElement.setAttribute("class", "problem-link diff-hard");
+    }else{
+      linkElement.setAttribute("class", "problem-link diff-insane");
     }
     linkElement.setAttribute("data-problem", problemId);
     linkElement.textContent = problem.title + "\n" + problem.point;

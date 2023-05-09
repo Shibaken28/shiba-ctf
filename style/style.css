@@ -258,18 +258,39 @@ header h1 {
   background-color: #5bd95b;
 }
 
-.tag-math{
+.diff-baby{
   border-style: solid;
-  border-color: #1b9c9e;
+  border-width: 3px;
+  border-color: #808080;
 }
 
-.tag-RSA{
-  border-style:groove;
-  border-color: #869f19;
+.diff-warmup{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1b9e2a;
+}
+
+.diff-easy{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1b989e;
+}
+
+.diff-medium{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #cf9c23;
 }
 
 
-.tag-hard{
-  border-style:outset;
-  border-color: #9f2019;
+.diff-hard{
+  border-width: 3px;
+  border-style: ridge;
+  border-color: #f13131;
+}
+
+.diff-insane{
+  border-width: 10px;
+  border-style: ridge;
+  border-color: #c5c66b;
 }
