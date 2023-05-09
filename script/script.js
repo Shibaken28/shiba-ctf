@@ -146,13 +146,12 @@ const problems = {
     title : "Beginner's AES",
     description:
 `
-フラグをECBモードで暗号化すると<br>
+フラグをあるkeyを用いてECBモードで暗号化すると次の値になりました．<br>
 b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a
 <br>
-になるようです．
-<br>
-同じkeyを使用した復元サイトがあるようですが...?
+暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
 <a target="_blank" href="./Interactive/ECBchall.html"> 復元サイト </a>
+<br>ただし，上記の値は入力として受け付けません！
 `,
     flag: "ce5d0f28041afbd66167f54bf13049e10c5b2e8b6300e0182d4f058dfd17ddd0",
     tag: ["AES"],
