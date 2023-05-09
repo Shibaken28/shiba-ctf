@@ -229,8 +229,20 @@ RSA暗号の復元をしましょう．
     tag: ["RSA"],
     point: 70
   },
-  XOR: {
+  XOR0: {
     title : "XOR starter",
+    description:
+`
+フラグの各文字をXORで暗号化しました．
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/XORstarter/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/XORstarter/output.txt">output.txt</a>
+`,
+    flag: "7e773ad0b7f9cdbe0cfb8c26d329894050e6682110d0293f4b4467fd1601aa60",
+    tag: ["binary", "XOR"],
+    point: 50,
+  },
+  XOR: {
+    title : "XOR Maze",
     description:`
 次の式が成り立つとき，$x$を文字列に変換したものがフラグである．
 $$
