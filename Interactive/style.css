@@ -1,0 +1,68 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #F0F0F0;
+}
+h1 {
+	font-size: 36px;
+	color: #333333;
+}
+h2 {
+	font-size: 24px;
+	color: #333333;
+}
+form {
+	margin-bottom: 16px;
+	padding: 16px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 8px;
+}
+label {
+	font-size: 20px;
+	color: #333333;
+	display: inline-block;
+	margin-bottom: 8px;
+}
+input[type="text"] {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 8px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	width: 90%;
+}
+input[type="text"][readonly] {
+	background-color: #ddd;
+	cursor: not-allowed;
+}
+button {
+	font-size: 24px;
+	color: #FFFFFF;
+	background-color: #333333;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #666666;
+}
+#ciphertext {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 8px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	width: 400px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+	width: 90%;
+}
+#error {
+	font-size: 20px;
+	color: #FF0000;
+}

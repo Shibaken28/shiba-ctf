@@ -142,6 +142,22 @@ const problems = {
     flag: "e713df524228168d6c56be2883ce92993ffa85c9ae63924c11a3b4f97d5e9b7d",
     point: 30,
   },
+  AES1: {
+    title : "Beginner's AES",
+    description:
+`
+フラグをECBモードで暗号化すると<br>
+b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a
+<br>
+になるようです．
+<br>
+同じkeyを使用した復元サイトがあるようですが...?
+<a target="_blank" href="./Interactive/ECBchall.html"> 復元サイト </a>
+`,
+    flag: "ce5d0f28041afbd66167f54bf13049e10c5b2e8b6300e0182d4f058dfd17ddd0",
+    tag: ["AES"],
+    point: 50,
+  },
   Equ1: {
     title : "Equation 1",
     description: "次の$x$に関する方程式を解いてください．<br> $$3158x=162030664$$ <br> 答えをそのままsctf{}で囲んで提出してください．",
@@ -429,9 +445,8 @@ This RSA has some strong primes, so it can't be broken by factoring N.
     flag: "",
     point: 0,
   },
+
 };
-
-
 
 const problemListElement = document.getElementById("problem-list");
 
