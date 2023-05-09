@@ -295,7 +295,7 @@ XOR, XOR, XOR, and XOR
 乱数を使って暗号化をしました．私は優しいので$a,m$を教えてあげます．<br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall1.py">chall1.py</a>
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output1.py">output1.txt</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output1.txt">output1.txt</a>
 <br>
 <br>
 線形合同法とは，次のような式で，前の数$x_n$から次の数$x_{n+1}$を生成する方法です．
@@ -313,7 +313,7 @@ $$x_{n+1} = (ax_n + b) \\mod m$$
 乱数を使って暗号化をしました．私は優しいので$b,m$を教えてあげます．<br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall2.py">chall2.py</a>
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output2.py">output2.txt</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output2.txt">output2.txt</a>
 `,
     flag: "24a75c36037012a826592c41171e05e0ff62eefa7dd74b65bfb0dacf494445dc",
     tag: ["random"],
@@ -326,7 +326,7 @@ $$x_{n+1} = (ax_n + b) \\mod m$$
 乱数を使って暗号化をしました．私はちょっと優しいので$m$だけ教えてあげます．<br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall3.py">chall3.py</a>
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output3.py">output3.txt</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output3.txt">output3.txt</a>
 `,
     flag: "01b768ea02d0dfb4f7ca2e9b87c336050a5f7ecfcfdddd0f0c88140b0a2ea897",
     tag: ["random"],
@@ -339,7 +339,7 @@ $$x_{n+1} = (ax_n + b) \\mod m$$
 乱数を使って暗号化をしました．何も教えません．<br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall4.py">chall4.py</a>
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output4.py">output4.txt</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output4.txt">output4.txt</a>
 `,
     flag: "486c2592018d19361a64defe0f9c3f6194b2740077888ebcc9b910e91f58df79",
     tag: ["random"],
@@ -352,7 +352,7 @@ $$x_{n+1} = (ax_n + b) \\mod m$$
 乱数を使って暗号化をしました．1つ飛ばしで教えてあげます<br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall5.py">chall5.py</a>
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output5.py">output5.txt</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output5.txt">output5.txt</a>
 `,
     flag: "5850312678728a14b64922b1a294c07e34dee66bd053c9e1e010ecb859d79b1f",
     tag: ["random"],
