@@ -322,9 +322,9 @@ $$x_{n+1} = (ax_n + b) \\mod m$$
     description:
 `
 乱数を使って暗号化をしました．何も教えません．<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall3.py">chall4.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall4.py">chall4.py</a>
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output3.py">output4.txt</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output4.py">output4.txt</a>
 `,
     flag: "486c2592018d19361a64defe0f9c3f6194b2740077888ebcc9b910e91f58df79",
     tag: ["random"],
@@ -335,9 +335,9 @@ $$x_{n+1} = (ax_n + b) \\mod m$$
     description:
 `
 乱数を使って暗号化をしました．1つ飛ばしで教えてあげます<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall3.py">chall5.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall5.py">chall5.py</a>
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output3.py">output5.txt</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output5.py">output5.txt</a>
 `,
     flag: "5850312678728a14b64922b1a294c07e34dee66bd053c9e1e010ecb859d79b1f",
     tag: ["random"],
