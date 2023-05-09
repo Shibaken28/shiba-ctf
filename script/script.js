@@ -165,7 +165,7 @@ const problems = {
   },
   Equ4: {
     title : "Equation 4",
-    description: "次で定義される関数$f$において，$f(x)$の値が <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Equations/Eq4/output.txt\">output.txt</a> となりました． <br> $$f(x)=x^8+x^4+x^2+x$$ <br> $x$の値を文字列に変換し回答してください",
+    description: "次で定義される関数$f$において，$f(x)$の値が <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Equations/Eq4/output.txt\">output.txt</a> となりました． <br> $$f(x)=x^8+x^4+x^2$$ <br> $x$の値を文字列に変換し回答してください",
     flag: "8804933356ff27c27af964740f3e334c2464e5a8dd97bfe3163c8c23951ceb4c",
     tag: ["math","PPC"],
     point: 70,
@@ -364,9 +364,14 @@ function buildProblemList(problemList) {
     const linkElement = document.createElement("a");
     linkElement.setAttribute("href", "#");
     linkElement.setAttribute("class", "problem-link");
+    // problem linkをtagによって色分けする
+    if (problem.tag) {
+      for (const tag of problem.tag) {
+        linkElement.classList.add("tag-" + tag);
+      }
+    }
     linkElement.setAttribute("data-problem", problemId);
     linkElement.textContent = problem.title + "\n" + problem.point;
-
     listItemElement.appendChild(linkElement);
     problemListElement.appendChild(listItemElement);
   }
