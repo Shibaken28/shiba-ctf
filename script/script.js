@@ -229,6 +229,7 @@ RSA暗号の復元をしましょう．
     tag: ["RSA"],
     point: 70
   },
+
   XOR0: {
     title : "XOR starter",
     description:
@@ -271,6 +272,76 @@ XOR, XOR, XOR, and XOR
     flag: "58c5a784c6ee754206843c730eaaeb63bcf5b5843729caa318647fa17a3fa57e",
     tag: ["XOR","binary"],
     point: 100
+  },
+  rnd1: {
+    title : "Foresight? 1",
+    description:
+`
+乱数を使って暗号化をしました．私は優しいので$a,m$を教えてあげます．<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall1.py">chall1.py</a>
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output1.py">output1.txt</a>
+<br>
+<br>
+線形合同法とは，次のような式で，前の数$x_n$から次の数$x_{n+1}$を生成する方法です．
+$$x_{n+1} = (ax_n + b) \\mod m$$
+ただし，$\\mod m$は$m$で割ったあまりを表し，$a,b,m$は定数です．
+`,
+    flag: "67bd0e6c6cdfb5ad714e4c4b0ec1d4b0f21ab1b2ed685cbeac113f26479dc9b9",
+    tag: ["random"],
+    point: 50,
+  },
+  rnd2: {
+    title : "Foresight? 2",
+    description:
+`
+乱数を使って暗号化をしました．私は優しいので$b,m$を教えてあげます．<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall2.py">chall2.py</a>
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output2.py">output2.txt</a>
+`,
+    flag: "24a75c36037012a826592c41171e05e0ff62eefa7dd74b65bfb0dacf494445dc",
+    tag: ["random"],
+    point: 70,
+  },
+  rnd3: {
+    title : "Foresight? 3",
+    description:
+`
+乱数を使って暗号化をしました．私はちょっと優しいので$m$だけ教えてあげます．<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall3.py">chall3.py</a>
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output3.py">output3.txt</a>
+`,
+    flag: "01b768ea02d0dfb4f7ca2e9b87c336050a5f7ecfcfdddd0f0c88140b0a2ea897",
+    tag: ["random"],
+    point: 100,
+  },
+  rnd4: {
+    title : "Foresight? 4",
+    description:
+`
+乱数を使って暗号化をしました．何も教えません．<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall3.py">chall4.py</a>
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output3.py">output4.txt</a>
+`,
+    flag: "486c2592018d19361a64defe0f9c3f6194b2740077888ebcc9b910e91f58df79",
+    tag: ["random"],
+    point: 200,
+  },
+  rnd5: {
+    title : "Foresight? Final",
+    description:
+`
+乱数を使って暗号化をしました．1つ飛ばしで教えてあげます<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/chall3.py">chall5.py</a>
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Foresight/output3.py">output5.txt</a>
+`,
+    flag: "5850312678728a14b64922b1a294c07e34dee66bd053c9e1e010ecb859d79b1f",
+    tag: ["random"],
+    point: 300,
   },
   RSA1: {
     title: "Each RSA",
@@ -379,13 +450,13 @@ function buildProblemList(problemList) {
     // problem linkをpointによって色分けする
     if (problem.point < 10) {
       linkElement.setAttribute("class", "problem-link diff-baby");
-    } else if (problem.point < 100) {
+    } else if (problem.point < 50) {
       linkElement.setAttribute("class", "problem-link diff-warmup");
-    } else if (problem.point < 300) {
+    } else if (problem.point < 100) {
       linkElement.setAttribute("class", "problem-link diff-easy");
-    } else if (problem.point < 500) {
+    } else if (problem.point < 300) {
       linkElement.setAttribute("class", "problem-link diff-medium");
-    } else if (problem.point < 1000) {
+    } else if (problem.point < 500) {
       linkElement.setAttribute("class", "problem-link diff-hard");
     }else{
       linkElement.setAttribute("class", "problem-link diff-insane");
