@@ -1,4 +1,4 @@
-flag = "sctf{XOR_has_int3r3sting_pr0perties}"
+flag = "?"
 
 key = 49
 assert 0 <= key < 256
