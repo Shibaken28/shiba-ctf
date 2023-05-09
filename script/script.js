@@ -87,6 +87,12 @@ const problems = {
     flag: "86b4dde04b595569eb1232f27636746e4366930db990f6667517a3f14e25b3ab",
     point: 30,
   },
+  cls5: {
+    title: "Cylinder",
+    description: "s{__05pcy440t3t0r_d3rfu3g_p}",
+    flag: "d6a843f2f1dfb41c85ac3111ba6532addfd1de3611eb969faf3487f809b748dd",
+    point: 20,
+  },
   mdn1: {
     title: "Numbers",
     description: "115, 99, 116, 102, 123, 78, 117, 109, 98, 101, 114, 115, 95, 97, 114, 101, 95, 97, 95, 99, 111, 109, 109, 111, 110, 95, 108, 97, 110, 103, 117, 97, 103, 101, 125",
@@ -136,6 +142,7 @@ const problems = {
     flag: "02bef8e99505357ff8dca270fee051da6927994013aeedd52308e430cf922887",
     point: 20,
   },
+
   mdn3: {
     title: "AES starter",
     description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
