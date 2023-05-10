@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Interactive Challenge </title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sevillana&display=swap'); </style>
+    
   </head>
   <body>
     <h1> AES ECB Mode Decryption Service </h1>
@@ -29,7 +31,28 @@
 
     <h2>Error:</h2>
     <div id="error"></div>
-  
+
+    <br><br>
+    <div class="container">
+    <h2>アドバイス</h2>
+    　AES暗号は，入力データをある一定の長さに分割して暗号化します．この問題の場合は，128bit(16byte)ごとに分割して暗号化しています．
+    分割したデータをブロックと呼びます．各ブロックをどのように暗号化するかは，暗号化モードによって異なります．以下は，ECBモードの暗号化(encryption)と復号(decription)の様子を示したものです．
+    <br>
+    <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/ECB_encryption.svg/902px-ECB_encryption.svg.png" >
+    <br>
+    <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/ECB_decryption.svg/902px-ECB_decryption.svg.png" >
+    <br>
+    　AES暗号を初めて学ぶ人は"block cipher encryption"や"block cipher decryption"の具体的な内容が気になるかもしれません．
+    しかし，多くの問題においては，その具体的な内容はあまり重要ではないです．
+    少なくとも，"block cipher encryption/decryption"について，次の特徴を知っていれば良いです<br>
+    ・同じブロックと同じ鍵で暗号化すると，同じ出力が得られる．<br>
+    ・同じブロックを異なる鍵で暗号化すると，出力は異なる．<br>
+    ・暗号化したときに使った鍵と同じ鍵でブロックを復号すると，元のブロックが得られる．<br>
+    ・似ているブロックの入力であっても，出力後のブロックは全く異なる．<br>
+    ・鍵を全探索することは基本的には困難である．(2^128通りを試す必要があるため)<br>
+    ここでの「全く異なる」とは，「入力が似ているからといって，出力も似ているとは限らない」ということです(SHAなどのハッシュ関数の特徴と同じです)．
+    また，これらの内容は，あくまでブロック単位の話であることに注意してください．
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script>
 
