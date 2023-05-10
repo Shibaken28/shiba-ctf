@@ -23,5 +23,3 @@ for x in m:
 print(f"n = {n}")
 print(f"e = {e}")
 print(f"cs = {cs}")
-print(f"k = {k}")
-print(f"b = {b}")
