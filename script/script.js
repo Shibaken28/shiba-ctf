@@ -93,6 +93,23 @@ const problems = {
     flag: "d6a843f2f1dfb41c85ac3111ba6532addfd1de3611eb969faf3487f809b748dd",
     point: 20,
   },
+  cls6: {
+    title: "Square",
+    description:`
+cipher text: wmeijredxjjpkaamkimutbhxedxhgrmgjw
+<br>
+key: esp
+<br>
+<br>
+<img class="image" src="./img/square.png" width="60%">
+<br>
+<a href="https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A3%E3%82%B8%E3%83%A5%E3%83%8D%E3%83%AB%E6%9A%97%E5%8F%B7" target="_blank">画像出典: フリー百科事典『ウィキペディア（Wikipedia）』Vigenère cipher</a>
+<br>
+復元した文字列をそのままsctf{}で囲んで提出してください．
+`,
+    flag: "9d23a7a803a48dd9663095fce5c378408a14ba4334721a445290876fde2fde78",
+    point: 20,
+  },
   mdn1: {
     title: "Numbers",
     description: "115, 99, 116, 102, 123, 78, 117, 109, 98, 101, 114, 115, 95, 97, 114, 101, 95, 97, 95, 99, 111, 109, 109, 111, 110, 95, 108, 97, 110, 103, 117, 97, 103, 101, 125",
@@ -142,6 +159,18 @@ const problems = {
     flag: "02bef8e99505357ff8dca270fee051da6927994013aeedd52308e430cf922887",
     point: 20,
   },
+  mdn10: {
+    title: "Sanity Check",
+    description:`
+Just Sanity Check (Except for certain people)
+<br>
+<br>
+<img class="image" src="./img/lol.png" width="90%">
+<br>
+`,
+    flag: "b904c47e6aebbe836084ca0244e42509e48c9aaa79ec8056ce8a828138b0f9ef",
+    point: 5,
+  },
 
   mdn3: {
     title: "AES starter",
@@ -163,6 +192,20 @@ b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a
     flag: "ce5d0f28041afbd66167f54bf13049e10c5b2e8b6300e0182d4f058dfd17ddd0",
     tag: ["AES"],
     point: 50,
+  },
+  padding: {
+    title : "Padding Escapade",
+    description:
+`
+データ長を16(bytes)の倍数にするための，paddingという技術があります．<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Padding/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Padding/output.txt">output.txt</a>
+<br>
+P.S. 本問題で使用されているPaddingは，PKCS#7という方式です．
+`,
+    flag: "530a471535069ae525599639810b14947987689562d13f96ad83b74b8fbb84f7",
+    tag: ["AES", "Padding"],
+    point: 70,
   },
   Equ1: {
     title : "Equation 1",
@@ -365,6 +408,20 @@ $$x_{n+1} = (ax_n + b) \\mod m$$
     tag: ["random"],
     point: 300,
   },
+  modpuzzle: {
+    title : "Modular Puzzle",
+    description:
+`
+mod演算は，割り算を逆元とすれば，案外普通の演算と同じように扱えます．
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/modpuzzle/encode.py">encode.py</a>
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/modpuzzle/output.txt">output.txt</a>
+`,
+    flag: "5efa5ef4336e08dab251162163c62b2cb83e4631272bdf1b86bf41fbea675121",
+    tag: ["mod", "math"],
+    point: 150,
+  },
   RSA1: {
     title: "Each RSA",
     description:`
@@ -445,6 +502,17 @@ This RSA has some strong primes, so it can't be broken by factoring N.
     tag: ["RSA"],
     point: 300
   },
+  stair: {
+    title: "Staircase",
+    description:`
+Like Infinite Stairway
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/output.txt">output.txt</a>`,
+    flag: "d106d367278bf68be13170b5fc706890fc72a50797b1032fff306b1f0fad8d04",
+    tag: ["mod", "math"],
+    point: 200
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
@@ -455,6 +523,11 @@ This RSA has some strong primes, so it can't be broken by factoring N.
 };
 
 const problemListElement = document.getElementById("problem-list");
+const scoreElement = document.querySelector('.score-value');
+const levelElement = document.querySelector('.level-value');
+const progressBarFillElement = document.querySelector('.progress-bar-fill');
+const nextLevelValueElement = document.querySelector('.next-level-value');
+
 
 buildProblemList(problems);
 updateSolvedStatus();
@@ -602,7 +675,7 @@ $('.answer-form').submit(function(event) {
   if (hash === problems[problem].flag) {
     updateSolvedStatus();
     // 正解の場合
-    $.cookie(problem, 'solved', {expires: 100000}); // cookieに解答状況を記録
+    $.cookie(problem, 'solved', {expires: 1000000}); // cookieに解答状況を記録
     $(this).closest('.problem').find('.answer-message').text('Correct!').css('color', 'green').show(); // 正解メッセージを表示
     $(this).closest('.problem').find('.answer-message').addClass('correct'); 
   } else {
@@ -612,13 +685,33 @@ $('.answer-form').submit(function(event) {
   }
 })
 
+function updateScore(score) {
+  let level = calculateLevel(score);
+  let nextLevelScore = calculateNextLevelScore(level);
+  scoreElement.textContent = score;
+  progressBarFillElement.style.width = (score / nextLevelScore) * 100 + '%';
+  nextLevelValueElement.textContent = nextLevelScore - score;
+  levelElement.textContent = level;
+  nextLevelScore = calculateNextLevelScore(level);
+}
+
+function calculateLevel(score) {
+  return Math.floor(Math.sqrt(score / 10));
+}
+function calculateNextLevelScore(level) {
+  return 10 * Math.pow(level + 1, 2);
+}
 
 function updateSolvedStatus(){
   $(document).ready(function() {
+    let totalScore = 0;
     $('.problem-link').each(function() {
       var problem = $(this).data('problem');
       if ($.cookie(problem)) {
         $(this).addClass('solved');
+        totalScore += problems[problem].point;
+        console.log(totalScore);
+        updateScore(totalScore);
       }
     });
   });

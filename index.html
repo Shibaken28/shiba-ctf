@@ -34,11 +34,29 @@
     </script>
     <header>
       <h1>Shiba CTF Gym</h1>
-      <h3>ver. 1.1.1</h3>
+      <h3>ver. 1.2.0</h3>
       暗号に関する問題集です．点数が大きいほど難易度が高いです．
-      フラグフォーマットはsctf{}です．
+      フラグフォーマットはsctf{}です．cookieを使用して進捗状況を保存しています．
     </header>
     <input type="text" id="search-bar" class="search-bar" placeholder="Search by substring or tag...">
+
+    <div class="score">
+      <div class="level">
+        <span class="level-label">Skill Level: </span>
+        <span class="level-value">1</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+      </div>
+      <div class="score-info">
+        <span class="score-label">Score: </span>
+        <span class="score-value">0</span>
+        <span class="next-level-label">Next Level: </span>
+        <span class="next-level-value">10</span>
+      </div>
+    </div>
+
+    
     <div class="problem-list">
       <ul id="problem-list"></ul>
     </div>
