@@ -9,7 +9,7 @@ def verify(a):
     return x != 0
 
 
-flag = "sctf{unl0cking_th3_myst3r13s_0f_f4ct0ri4ls_4nd_th3ir_3xtr4ordinary_pr0p3rt13s}"
+flag = "?"
 dummy = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_{}"
 c = ""
 b = []
