@@ -11,6 +11,7 @@
     <h1> AES ECB Mode Decryption Service </h1>
     <h3> for beginner's AES</h3>
     <h4>注意！これはweb分野の問題ではありません．問題を解くのに，このサイトのソースコードを見る必要はありません．</h4>
+    <h4>入力にb6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58aを含む入力は受け付けません！</h4>
     <form>
       <label for="key">Key (hex):</label> <br>
       <input readonly value = "SECRET" type="text" id="key" name="key" required ><br>
@@ -105,7 +106,8 @@
           if(txt.length % 32 != 0){
             throw new Error("Plaintext must be a multiple of 16 bytes (32 hex characters)");
           }
-          if(txt=="b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a"){
+          // b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58aが部分に入っているか
+          if(txt.match(/b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a/i)){
             throw new Error("You can't decrypt this ciphertext which is the flag!");
           }
 
