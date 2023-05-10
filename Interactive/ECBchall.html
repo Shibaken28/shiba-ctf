@@ -63,7 +63,7 @@
         const decrypted = CryptoJS.AES.decrypt(
           { ciphertext: CryptoJS.enc.Hex.parse(encrypted) },
           CryptoJS.enc.Hex.parse(key),
-          { mode: CryptoJS.mode.ECB }
+          { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.NoPadding }
         );
         
         // パディング処理
