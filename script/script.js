@@ -513,6 +513,17 @@ Like Infinite Stairway
     tag: ["mod", "math"],
     point: 200
   },
+  RSA8: {
+    title: "Hyperdefensiveness",
+    description:`
+    I realized it was dangerous to encrypt each letter individually, so I made it very complicated.
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/output.txt">output.txt</a>`,
+    flag: "532090380c5258a8f051033b9a8b53e2d9f503f46e8672c4a8db0e97ccaa6064",
+    tag: ["RSA"],
+    point: 500
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
@@ -521,6 +532,8 @@ Like Infinite Stairway
   },
 
 };
+
+
 
 const problemListElement = document.getElementById("problem-list");
 const scoreElement = document.querySelector('.score-value');
