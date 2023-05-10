@@ -38,9 +38,11 @@
     　AES暗号は，入力データをある一定の長さに分割して暗号化します．この問題の場合は，128bit(16byte)ごとに分割して暗号化しています．
     分割したデータをブロックと呼びます．各ブロックをどのように暗号化するかは，暗号化モードによって異なります．以下は，ECBモードの暗号化(encryption)と復号(decription)の様子を示したものです．
     <br>
-    <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/ECB_encryption.svg/902px-ECB_encryption.svg.png" >
+    <img class="image" src="./img/ECB_encryption.png" >
     <br>
-    <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/ECB_decryption.svg/902px-ECB_decryption.svg.png" >
+    <img class="image" src="./img/ECB_decryption.png" >
+    <br>
+    <a href="https://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7%E5%88%A9%E7%94%A8%E3%83%A2%E3%83%BC%E3%83%89" target="_blank">画像出典: フリー百科事典『ウィキペディア（Wikipedia）』暗号利用モード</a>
     <br>
     　AES暗号を初めて学ぶ人は"block cipher encryption"や"block cipher decryption"の具体的な内容が気になるかもしれません．
     しかし，多くの問題においては，その具体的な内容はあまり重要ではないです．
@@ -50,6 +52,7 @@
     ・暗号化したときに使った鍵と同じ鍵でブロックを復号すると，元のブロックが得られる．<br>
     ・似ているブロックの入力であっても，出力後のブロックは全く異なる．<br>
     ・鍵を全探索することは基本的には困難である．(2^128通りを試す必要があるため)<br>
+    ・入力はPKCS#7形式でパディングされ，長さが16bytesの倍数になるように調節される<br>
     ここでの「全く異なる」とは，「入力が似ているからといって，出力も似ているとは限らない」ということです(SHAなどのハッシュ関数の特徴と同じです)．
     また，これらの内容は，あくまでブロック単位の話であることに注意してください．
   </div>
@@ -65,9 +68,11 @@
         
         // パディング処理
         var s = CryptoJS.enc.Hex.stringify(decrypted);
+        /*
+        
         while (s.length % 32 != 0){
           s = s + "0";
-        }
+        }*/
 
         return s;
       }
