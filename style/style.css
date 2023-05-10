@@ -258,41 +258,49 @@ header h1 {
   background-color: #5bd95b;
 }
 
-.diff-baby{
+.diff-none{
   border-style: solid;
   border-width: 3px;
   border-color: #808080;
 }
 
-.diff-warmup{
+.diff-baby{
   border-width: 3px;
   border-style: solid;
   border-color: #1b9e2a;
 }
 
-.diff-easy{
+.diff-warmup{
   border-width: 3px;
   border-style: solid;
   border-color: #1b989e;
 }
 
-.diff-medium{
+.diff-easy{
   border-width: 3px;
   border-style: solid;
   border-color: #cf9c23;
 }
 
 
-.diff-hard{
+.diff-medium{
   border-width: 3px;
   border-style: ridge;
   border-color: #f13131;
 }
 
+.diff-hard{
+  border: 6px solid gold;
+  box-shadow: 0 0 20px goldenrod;
+  border-radius: 10px;
+}
+
 .diff-insane{
-  border-width: 8px;
-  border-style: ridge;
-  border-color: #f2f55b;
+  border: 6px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(255, 23, 23);
+  position: relative;
+  overflow: hidden;
 }
 
 

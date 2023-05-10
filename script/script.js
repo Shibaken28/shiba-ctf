@@ -556,14 +556,16 @@ function buildProblemList(problemList) {
     linkElement.setAttribute("class", "problem-link");
     // problem linkをpointによって色分けする
     if (problem.point < 10) {
-      linkElement.setAttribute("class", "problem-link diff-baby");
+      linkElement.setAttribute("class", "problem-link diff-none");
     } else if (problem.point < 50) {
-      linkElement.setAttribute("class", "problem-link diff-warmup");
+      linkElement.setAttribute("class", "problem-link diff-baby");
     } else if (problem.point < 100) {
-      linkElement.setAttribute("class", "problem-link diff-easy");
+      linkElement.setAttribute("class", "problem-link diff-warmup");
     } else if (problem.point < 300) {
-      linkElement.setAttribute("class", "problem-link diff-medium");
+      linkElement.setAttribute("class", "problem-link diff-easy");
     } else if (problem.point < 500) {
+      linkElement.setAttribute("class", "problem-link diff-medium");
+    }else if(problem.point < 1000){
       linkElement.setAttribute("class", "problem-link diff-hard");
     }else{
       linkElement.setAttribute("class", "problem-link diff-insane");
