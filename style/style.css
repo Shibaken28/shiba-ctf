@@ -289,16 +289,11 @@ header h1 {
   border-color: #f13131;
 }
 
-.diff-hard{
-  border: 6px solid gold;
-  box-shadow: 0 0 20px goldenrod;
-  border-radius: 10px;
-}
 
-.diff-insane{
-  border: 6px solid rgb(0, 0, 0);
+.diff-hard{
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgb(255, 23, 23);
+  box-shadow: 0 0 10px rgb(255, 23, 23);
   position: relative;
   overflow: hidden;
 }
