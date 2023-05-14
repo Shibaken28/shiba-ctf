@@ -6,6 +6,7 @@
 ## 注意
 質より量の精神で作ってます．
 **問題の質は保証しません．**
+I'm sorry there are many boring challenges (but it's necessary for beginners I think).
 
 好き勝手に問題を作っています．
 
