@@ -162,13 +162,14 @@ key: esp
   mdn10: {
     title: "Sanity Check",
     description:`
-Just Sanity Check (Except for certain people)
+Just Sanity Check (Except for certain people) <br>
+answer in upper case for example: SCTF{THIS_IS_ANSWER} <br>
 <br>
 <br>
 <img class="image" src="./img/lol.png" width="90%">
 <br>
 `,
-    flag: "b904c47e6aebbe836084ca0244e42509e48c9aaa79ec8056ce8a828138b0f9ef",
+    flag: "66d3f848688912ba6300ae5ea07938ad5d08ab7705385f453828661669892356",
     point: 5,
   },
 
