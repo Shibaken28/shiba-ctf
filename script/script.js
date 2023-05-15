@@ -172,7 +172,12 @@ answer in upper case for example: SCTF{THIS_IS_ANSWER} <br>
     flag: "66d3f848688912ba6300ae5ea07938ad5d08ab7705385f453828661669892356",
     point: 5,
   },
-
+  mdn11: {
+    title: "Numbers 3",
+    description: "I'm sorry (You might think this challenge is unfair).<br> <br>495c11db788574a62d038c125c688b9976c81c75370b9de35d1ac9da9a95b39591ea51cc3acd660b1804a44a743a443490826847dc9947d0c7067ed9dd7",
+    flag: "7787eb9045fac7d7203698e4bbe3aed68ebff24f519e5599f2b5f0c9beca3140",
+    point: 20,
+  },
   mdn3: {
     title: "AES starter",
     description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",

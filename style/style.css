@@ -298,6 +298,13 @@ header h1 {
   overflow: hidden;
 }
 
+.diff-insane{
+  border: 5px solid rgb(247, 232, 29);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(241, 209, 102);
+  position: relative;
+  overflow: hidden;
+}
 
 .score {
   display: flex;
