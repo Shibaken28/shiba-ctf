@@ -180,7 +180,7 @@ answer in upper case for example: SCTF{THIS_IS_ANSWER} <br>
     point: 30,
   },
   AES1: {
-    title : "Beginner's AES",
+    title : "ECB starter",
     description:
 `
 フラグをあるkeyを用いてECBモードで暗号化すると次の値になりました．<br>
@@ -193,6 +193,37 @@ b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a
     flag: "ce5d0f28041afbd66167f54bf13049e10c5b2e8b6300e0182d4f058dfd17ddd0",
     tag: ["AES"],
     point: 50,
+  },
+  AES4: {
+    title : "OFB starter",
+    description:
+`
+OFBモードで，「入力」+「フラグ文字列」を暗号化してくれるサイトがあります．
+<a target="_blank" href="./Interactive/OFBchall.html"> 暗号化 </a>
+<br> 復元サイトは用意していません！
+`,
+    flag: "83f11da38e0e3bb57b4d952fd6f7a5a426abe41d0ee17e6712a226ea925d450e",
+    tag: ["AES"],
+    point: 50,
+  },
+  AES2: {
+    title : "CBC starter",
+    description:
+`
+フラグをあるkeyを用いてCBCモードで暗号化すると次の値になりました．<br>
+958fd2d255b337bb0c3d8c95fbcbc56a6793aad6cb36a4c9bbc6bfc1791ac3f0dc5b1476371e1333927ebdbc9d2ab27f
+<br>
+また，使用したinitialization vectorは次の値です．
+<br>
+1122334411223344aabbccddaabbccdd
+<br>
+暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
+<a target="_blank" href="./Interactive/CBCchall.html"> 復元サイト </a>
+<br>ただし，16bytesより長い入力は受け付けません！
+`,
+    flag: "53dbbf52157e2e8c2cdbb3292d4513d69af0176a79bb90e67edd413c6f955d29",
+    tag: ["AES"],
+    point: 60,
   },
   padding: {
     title : "Padding Escapade",
@@ -208,6 +239,26 @@ P.S. 本問題で使用されているPaddingは，PKCS#7という方式です�
     tag: ["AES", "Padding"],
     point: 70,
   },
+  AES3: {
+    title : "Format Detection",
+    description:
+`
+フラグをあるkeyを用いてCBCモードで暗号化すると次の値になりました．<br>
+c20dca2a1c9d606ca7328217b83a97108bae8720ea35c88ad792ec4f25bb3fd2
+<br>
+また，使用したinitialization vectorは次の値です．
+<br>
+99998888777766661111222233334444
+<br>
+暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
+<a target="_blank" href="./Interactive/CBCchall2.html"> 復元サイト </a>
+<br>ただし，復号した結果に「73637466」(文字列sctfを16進数デコードしたもの)が含まれる場合，全体の復号結果は見せません！
+`,
+    flag: "0e4b16237419c18d9809c4b3d8f1f707fe7b2597e161ab9cbd916d72b94f9c00",
+    tag: ["AES"],
+    point: 80,
+  },
+
   Equ1: {
     title : "Equation 1",
     description: "次の$x$に関する方程式を解いてください．<br> $$3158x=162030664$$ <br> 答えをそのままsctf{}で囲んで提出してください．",

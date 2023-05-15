@@ -8,18 +8,16 @@
     
   </head>
   <body>
-    <h1> AES ECB Mode Decryption Service </h1>
-    <h3> for ECB starter</h3>
+    <h1> AES CBC Mode Encryption Service </h1>
+    <h3> for Format Detection</h3>
     <h4>注意！これはweb分野の問題ではありません．問題を解くのに，このサイトのソースコードを見る必要はありません．</h4>
-    <h4>b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58aを含む入力は受け付けません！</h4>
+    <h4>復号した結果に「73637466」(文字列sctfを16進数デコードしたもの)が含まれる場合，全体の復号結果は見せません！</h4>
     <form>
       <label for="key">Key (hex):</label> <br>
       <input readonly value = "SECRET" type="text" id="key" name="key" required ><br>
 
-      <!--
       <label for="iv">IV (hex):</label><br>
-      <input readonly value = "NONE" type="text" id="iv" name="iv" required><br>
-      -->
+      <input type="text" id="iv" name="iv" required><br>
 
       <label for="plaintext">Ciphertext (hex):</label><br>
       <input type="text" id="plaintext" name="plaintext" required><br>
@@ -35,36 +33,23 @@
 
     <br><br>
     <div class="container">
-    <h2>アドバイス</h2>
-    　AES暗号は，入力データをある一定の長さに分割して暗号化します．この問題の場合は，128bit(16byte)ごとに分割して暗号化しています．
-    分割したデータをブロックと呼びます．各ブロックをどのように暗号化するかは，暗号化モードによって異なります．以下は，ECBモードの暗号化(encryption)と復号(decription)の様子を示したものです．
+    <h2>CBCモード</h2>
     <br>
-    <img class="image" src="./img/ECB_encryption.png" >
+    <img class="image" src="./img/CBC_encryption.png" >
     <br>
-    <img class="image" src="./img/ECB_decryption.png" >
+    <img class="image" src="./img/CBC_decryption.png" >
     <br>
     <a href="https://ja.wikipedia.org/wiki/%E6%9A%97%E5%8F%B7%E5%88%A9%E7%94%A8%E3%83%A2%E3%83%BC%E3%83%89" target="_blank">画像出典: フリー百科事典『ウィキペディア（Wikipedia）』暗号利用モード</a>
     <br>
-    　AES暗号を初めて学ぶ人は"block cipher encryption"や"block cipher decryption"の具体的な内容が気になるかもしれません．
-    しかし，多くの問題においては，その具体的な内容はあまり重要ではないです．
-    少なくとも，"block cipher encryption/decryption"について，次の特徴を知っていれば良いです<br>
-    ・同じブロックと同じ鍵で暗号化すると，同じ出力が得られる．<br>
-    ・同じブロックを異なる鍵で暗号化すると，出力は異なる．<br>
-    ・暗号化したときに使った鍵と同じ鍵でブロックを復号すると，元のブロックが得られる．<br>
-    ・似ているブロックの入力であっても，出力後のブロックは全く異なる．<br>
-    ・鍵を全探索することは基本的には困難である．(2^128通りを試す必要があるため)<br>
-    ・入力はPKCS#7形式でパディングされ，長さが16bytesの倍数になるように調節される<br>
-    ここでの「全く異なる」とは，「入力が似ているからといって，出力も似ているとは限らない」ということです(SHAなどのハッシュ関数の特徴と同じです)．
-    また，これらの内容は，あくまでブロック単位の話であることに注意してください．
   </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script>
 
-      function decryptECB(key, encrypted) {
+      function decryptCBC(key, iv, encrypted) {
         const decrypted = CryptoJS.AES.decrypt(
           { ciphertext: CryptoJS.enc.Hex.parse(encrypted) },
           CryptoJS.enc.Hex.parse(key),
-          { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.NoPadding }
+          { iv: CryptoJS.enc.Hex.parse(iv), mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.NoPadding }
         );
         
         // パディング処理
@@ -80,23 +65,21 @@
 
       function encrypt() {
         var keyInput = document.getElementById("key");
-        //var ivInput = document.getElementById("iv");
+        var ivInput = document.getElementById("iv");
         var plaintextInput = document.getElementById("plaintext");
         var errorOutput = document.getElementById("error");
         var ciphertextOutput = document.getElementById("ciphertext");
 
         try {
           var keyHex = keyInput.value.trim();
-          key = "c4ee6b811c4f16abfef7021dba412f62"
-          //var iv = ivInput.value.trim();
+          key = "8111dbaef702c4ee6bc4f16abf412f62"
+          var iv = ivInput.value.trim();
           // Validate plaintext
           var txt = plaintextInput.value.trim();
 
-          /*
           if(iv.length != 32){
             throw new Error("IV must be 16 bytes (32 hex characters)");
-          }*/
-
+          }
           if(key.length != 32){
             throw new Error("Key must be 16 bytes (32 hex characters)");
           }
@@ -106,12 +89,7 @@
           if(txt.length % 32 != 0){
             throw new Error("Plaintext must be a multiple of 16 bytes (32 hex characters)");
           }
-          // b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58aが部分に入っているか
-          if(txt.match(/b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a/i)){
-            throw new Error("You can't decrypt this ciphertext which is the flag!");
-          }
-
-          const pt = decryptECB(key, txt);
+          const pt = decryptCBC(key, iv, txt);
           // 32の倍数でない場合は、先頭に0を追加する
           //while(decrypted.length % 32 != 0){
           //  decrypted = "0" + decrypted;
@@ -120,14 +98,12 @@
             throw new Error("Decryption failed");
           }
 
+          if(pt.match(/73637466/i)){
+            throw new Error("I can't show you the result because it contains the string '73637466' (hex for 'sctf')");
+          }
+
           errorOutput.innerText = "";
           ciphertextOutput.innerText  = pt
-          // Encrypt
-          // var ciphertext = CryptoJS.AES.decrypt(plaintext, key, { iv: iv, mode: CryptoJS.mode.CFB, padding: CryptoJS.pad.NoPadding });
-
-          // Display result
-          // errorOutput.innerText = "";
-          // ciphertextOutput.innerText = ciphertext.ciphertext.toString(CryptoJS.enc.Hex);
           
         } catch (e) {
           // Display error message
