@@ -120,6 +120,7 @@ header h1 {
   top: 50%;
   transform: translateY(20%);
   z-index: 101;
+
 }
 
 .problem-title {

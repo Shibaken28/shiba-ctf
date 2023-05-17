@@ -499,7 +499,9 @@ mod演算は，割り算を逆元とすれば，案外普通の演算と同じ�
     description:`
 Each Letter, Each RSA
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Each-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Each-RSA/output.txt">output.txt</a>`,
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Each-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Each-RSA/output.txt">output.txt</a>
+<br><br>
+`,
     flag: "5cb3d3202e6086672c5c9dc8dc64752a36a197eb07534775fcdc6bf16794f61d",
     tag: ["RSA"],
     point: 100
@@ -744,7 +746,7 @@ function test(problemList){
       problemTitle.textContent = problem.title; 
       problemId.textContent = $(this).data('problem');
       // 問題説明を設定
-      const problemDescriptionHtml = problem.description;
+      const problemDescriptionHtml = expandLinks(problem.description);
       problemDescription.innerHTML = problemDescriptionHtml;
 
       // 問題領域を表示
@@ -839,6 +841,13 @@ function updateSolvedStatus(){
     });
   });
 }
+
+function expandLinks(description) {
+  const LinkRegex = /\{link::(.*?)::(.*?)\}/g;
+  const expandedDescription = description.replace(LinkRegex, '<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/$1">$2</a>');
+  return expandedDescription;
+}
+
 
 
 
