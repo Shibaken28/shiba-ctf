@@ -187,9 +187,11 @@ U̷̢̪̦͋̇́̉̀͛͐̀̀̄̅̽͆̕͜n̸̨̘̯̺̗̜̥͉̮̥̿͆͗̃̒͂̐̋͜
 
 
 <br><br><br><br><br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Glitch/glitch.txt">テキストファイルに起こしたもの</a>
+
 `,
 flag: "3d1021d0cadce2619a04e85fb67137e662e5f1cbecb6d96283bfcf39cc2234c2",
-    point: 50,
+    point: 70,
   },
   mdn3: {
     title: "AES starter",
