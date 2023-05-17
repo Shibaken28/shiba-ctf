@@ -607,6 +607,18 @@ EVERYONE MENTION
     tag: ["RSA"],
     point: 300
   },
+  RSA10: {
+    title: "Inverse Reversal",
+    description:`
+Inverse's allure, a captivating verse,<br>
+Reverse's charm, a poetic universe.
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Inverse-RSA/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Inverse-RSA/output.txt">output.txt</a>`,
+    flag: "3bc03ab0ed3a2005e2b493caf3a4e50fa96ac5cf715cf3c924d21f9617c9a616",
+    tag: ["RSA"],
+    point: 500
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
