@@ -515,6 +515,17 @@ $e$ looks small
     tag: ["RSA"],
     point: 100
   },
+  RSA11: {
+    title: "RUSH E",
+    description:`
+RUSH "E"
+    <br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Rush-E/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Rush-E/output.txt">output.txt</a>`,
+    flag: "895e7de255af384885ed0fad5739bc54f01fe63f69746d18f012cf6f743bb4e6",
+    tag: ["RSA"],
+    point: 100
+  },
   lagrange: {
     title: "2D Lagrange",
     description: "二次関数を使って暗号化をしてみました．<br> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/encode.py\">encode.py</a> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/output.txt\">output.txt</a>",
@@ -585,17 +596,6 @@ Like Infinite Stairway
     tag: ["mod", "math"],
     point: 200
   },
-  RSA8: {
-    title: "Hyperdefensiveness",
-    description:`
-    I realized it was dangerous to encrypt each letter individually, so I made it very complicated.
-<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/encode.py">encode.py</a>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/output.txt">output.txt</a>`,
-    flag: "532090380c5258a8f051033b9a8b53e2d9f503f46e8672c4a8db0e97ccaa6064",
-    tag: ["RSA"],
-    point: 500
-  },
   RSA9: {
     title: "@Everyone",
     description:`
@@ -607,6 +607,18 @@ EVERYONE MENTION
     tag: ["RSA"],
     point: 300
   },
+  RSA8: {
+    title: "Hyperdefensiveness",
+    description:`
+    I realized it was dangerous to encrypt each letter individually, so I made it very complicated.
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/output.txt">output.txt</a>`,
+    flag: "532090380c5258a8f051033b9a8b53e2d9f503f46e8672c4a8db0e97ccaa6064",
+    tag: ["RSA"],
+    point: 500
+  },
+
   RSA10: {
     title: "Inverse Reversal",
     description:`
@@ -619,6 +631,7 @@ Reverse's charm, a poetic universe.
     tag: ["RSA"],
     point: 500
   },
+
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
