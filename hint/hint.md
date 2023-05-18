@@ -80,13 +80,13 @@ $e$ が小さいとどのような不都合が生じるでしょうか．
 ## 2D Lagrange
 
 <details>
-<summary>ヒント ★☆☆</summary>
+<summary>ヒント1 ★☆☆</summary>
 $a,b,c$ を全探索すると時間がかかります．どうにかして計算量を減らす方法はないでしょうか．
 </details>
 
 
 <details>
-<summary>ヒント ★★☆</summary>
+<summary>ヒント2 ★★☆</summary>
 $a,b,c$ のうち，2つの値が決まれば残りの1つの値も決まります．
 </details>
 
@@ -100,11 +100,11 @@ $9$ 個の素数が用意されて， $5$ 個分の $N$ ，すなわち $10$ 個
 ## Unbalance RSA
 
 <details>
-<summary>ヒント ★☆☆</summary>
+<summary>ヒント1 ★☆☆</summary>
 小さい素数も使われているので，素因数分解ができますが，完全に素因数分解することは難しそうです．
 </details>
 
 <details>
-<summary>ヒント ★★☆</summary>
+<summary>ヒント2 ★★☆</summary>
 $N$ を完全に素因数分解する必要はありません．
 </details>
