@@ -577,16 +577,6 @@ This RSA has some strong primes, so it can't be broken by factoring N.
     tag: ["RSA"],
     point: 200
   },
-  RSA7: {
-    title: "Insufficient RSA",
-    description:`There is not much information on this problem, after all, e is not given.
-<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Insufficient-RSA/encode.py">encode.py</a>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Insufficient-RSA/output.txt">output.txt</a>`,
-    flag: "05c7525dc87052b58602c3c09a63399043763014a11263a9a598c8276fe7b629",
-    tag: ["RSA"],
-    point: 300
-  },
   stair: {
     title: "Staircase",
     description:`
@@ -598,6 +588,17 @@ Like Infinite Stairway
     tag: ["mod", "math"],
     point: 200
   },
+  RSA7: {
+    title: "Insufficient RSA",
+    description:`There is not much information on this problem, after all, e is not given.
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Insufficient-RSA/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Insufficient-RSA/output.txt">output.txt</a>`,
+    flag: "05c7525dc87052b58602c3c09a63399043763014a11263a9a598c8276fe7b629",
+    tag: ["RSA"],
+    point: 300
+  },
+
   RSA9: {
     title: "@Everyone",
     description:`

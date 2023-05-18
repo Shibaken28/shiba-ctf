@@ -292,9 +292,9 @@ header h1 {
 
 
 .diff-hard{
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid rgb(109, 0, 0);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgb(255, 23, 23);
+  box-shadow: 0 0 20px rgb(160, 12, 12);
   position: relative;
   overflow: hidden;
 }
