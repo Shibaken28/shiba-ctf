@@ -16,4 +16,16 @@
 これは換え字暗号(substitution cipher)です．
 </details>
 
+## テスト
+$$
+a = b^2 + 5
+$$
+
+なんで$4a$
+
+<details>
+<summary>ヒント1 ★★☆</summary>
+
+これは換え字暗号(substitution cipher)です．
+</details>
 
