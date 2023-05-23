@@ -635,6 +635,18 @@ Reverse's charm, a poetic universe.
     point: 500
   },
 
+  DSA0: {
+    title: "DSA starter",
+    description:`
+フラグを得ましたが，悪意のある人が改ざんしたデータを大量に送ってきています．DSAの署名を利用して，改ざんされていないデータを見つけてください．
+{link::DSA/signature.py::signature.py}
+{link::DSA/output.txt::output.txt}
+`,
+    flag: "42a242f922f7ef32830bf938dafcd1f60f88dd94475e528da54976a72297807a",
+    tag: ["DSA"],
+    point: 150
+  },
+
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
