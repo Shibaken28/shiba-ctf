@@ -8,14 +8,17 @@
 - ★★★：解法をほぼ完全に示す程度
     - 例：「 $a$ を $1$ から $100$ まで全探索しましょう」
 
-## No meaning
+## 古典暗号
 
-<details>
+### No meaning
+
 <summary>ヒント ★★☆</summary>
 これは換え字暗号(substitution cipher)です．
 </details>
 
-## Numbers 3
+## 一般技術
+
+### Numbers 3
 
 <details>
 <summary>ヒント1 ★☆☆</summary>
@@ -28,7 +31,7 @@
 </details>
 
 
-## Math Class 3
+### Math Class 3
 
 <details>
 <summary>ヒント1 ★☆☆</summary>
@@ -40,7 +43,7 @@
 累乗を高速に計算するアルゴリズムが存在します．
 </details>
 
-## XOR Maze
+### XOR Maze
 <details>
 <summary>ヒント ★★☆</summary>
 XORの性質を以下に示します．
@@ -62,14 +65,23 @@ $$
 
 </details>
 
-## Each RSA
+## パズル
+### 2D Lagrange
+
+<details>
+<summary>ヒント1 ★☆☆</summary>
+$a,b,c$ を全探索すると時間がかかります．どうにかして計算量を減らす方法はないでしょうか．
+</details>
+
+## RSA暗号
+### Each RSA
 
 <details>
 <summary>ヒント ★☆☆</summary>
 $m$ が小さい値しか取らないことに注目しましょう．
 </details>
 
-## Small RSA
+### Small RSA
 
 <details>
 <summary>ヒント ★☆☆</summary>
@@ -77,27 +89,20 @@ $e$ が小さいとどのような不都合が生じるでしょうか．
 </details>
 
 
-## 2D Lagrange
-
-<details>
-<summary>ヒント1 ★☆☆</summary>
-$a,b,c$ を全探索すると時間がかかります．どうにかして計算量を減らす方法はないでしょうか．
-</details>
-
 
 <details>
 <summary>ヒント2 ★★☆</summary>
 $a,b,c$ のうち，2つの値が決まれば残りの1つの値も決まります．
 </details>
 
-## Many RSA
+### Many RSA
 <details>
 <summary>ヒント ★★☆</summary>
 $9$ 個の素数が用意されて， $5$ 個分の $N$ ，すなわち $10$ 個の素数が使用されています．つまり，使われる素数でダブりがあります．
 </details>
 
 
-## Unbalance RSA
+### Unbalance RSA
 
 <details>
 <summary>ヒント1 ★☆☆</summary>

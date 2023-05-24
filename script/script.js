@@ -707,6 +707,20 @@ $Q$の$x$座標をsctf{}で囲んで提出してください．
     tag: ["ECC"],
     point: 100
   },
+  ECC5: {
+    title: "ECC Starter 5",
+    description:`
+$a=9,b=13,p=41999$の次で表される楕円曲線上の点$P(31228, 23153)$において，
+$$
+y^2 = x^3 + ax + b \\pmod{p}
+$$
+$P=dP$を満たす$2$以上の最小の整数$d$を求めてください．
+$d$をsctf{}で囲んで提出してください．
+`,
+    flag: "ddaa66e3ece64913a05f1df56c5a0123f28a256f74c766940535ed7ec1eab86a",
+    tag: ["ECC"],
+    point: 100
+  },
   ECCF: {
     title: "ECC vs. RSA",
     description:
