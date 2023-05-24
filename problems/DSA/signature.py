@@ -24,7 +24,6 @@ def sign(msg, key, x):
     assert s != 0
     return r, s
 
-
 candidates = []
 dummy = "0123456789"
 

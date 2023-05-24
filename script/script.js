@@ -646,7 +646,79 @@ Reverse's charm, a poetic universe.
     tag: ["DSA"],
     point: 150
   },
+  ECC: {
+    title: "ECC Starter 1",
+    description:`
+ECC(Elliptic Curve Cryptography)の基礎を学びましょう．
+次の式はよく使われる形の楕円曲線の式です．
+$$
+y^2 = x^3 + ax + b \\pmod p
+$$
+$a=0,b=2,p=17$のとき，点$P(12,9)$に点$Q(8,2)$を加算した結果の点$R$を求めてください．
+$$
+R = P + Q
+$$
+$R$の$x$座標をsctf{}で囲んで提出してください．
 
+なお，楕円曲線上の演算は，例えば
+{atag::https://ja.wikipedia.org/wiki/%E6%A5%95%E5%86%86%E6%9B%B2%E7%B7%9A%E6%9A%97%E5%8F%B7::フリー百科事典『ウィキペディア（Wikipedia）』楕円曲線暗号}
+が参考になります．
+`,
+    flag: "979bef6e991f2cbb28d14008e8b41cc6b594cb7f16e721434338143176c5d099",
+    tag: ["ECC"],
+    point: 100
+  },
+  ECC2: {
+    title: "ECC Starter 2",
+    description:`
+次の楕円曲線上の点$P(4,10)$とある点$Q$を加算した結果は無限遠$O$となりました．
+$$
+y^2 = x^3 + 2 \\pmod p
+$$
+$Q$の$x$座標をsctf{}で囲んで提出してください．
+`,
+    flag: "1895766ff33b9e4ee7ff0d9e4b26cff6fce79f47e614ab31026c6ad79061b620",
+    tag: ["ECC"],
+    point: 100
+  },
+  ECC3: {
+    title: "ECC Starter 3",
+    description:`
+次の楕円曲線上の点$P(28603,46279)$を$10$倍した値$Q=10P$を求めてください．
+$$
+y^2 = x^3 + 5x + 13 \\pmod{58831}
+$$
+$Q$の$x$座標をsctf{}で囲んで提出してください．
+`,
+    flag: "5c88342d96bf450c1d8f8661ee4cb442ce4b490882e9367cc8b720915edc05c8",
+    tag: ["ECC"],
+    point: 100
+  },
+  ECC4: {
+    title: "ECC Starter 4",
+    description:`
+$a=5,b=13,p=3173581703$の次で表される楕円曲線上の点$P(2922555662, 1379601526)$を$p$倍した値$Q=pP$を求めてください．
+$$
+y^2 = x^3 + ax + b \\pmod{p}
+$$
+$Q$の$x$座標をsctf{}で囲んで提出してください．
+`,
+    flag: "a43261febcc8f8610ed69bf8ac643b3e24fff790c1b458eeaa95a8e382844c4e",
+    tag: ["ECC"],
+    point: 100
+  },
+  ECCF: {
+    title: "ECC vs. RSA",
+    description:
+`
+楕円曲線でRSA暗号みたいものを作ってみました．
+{link::ECC-RSA/encode.sage::encode.sage}
+{link::ECC-RSA/output.txt::output.txt}
+`,
+    flag: "02153fa853ab72dad27743ea7c676be3cbd8ebdca4438d4fd44fa7aad9cf1b9d",
+    tag: ["ECC"],
+    point: 300
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
@@ -856,8 +928,10 @@ function updateSolvedStatus(){
 }
 
 function expandLinks(description) {
-  const LinkRegex = /\{link::(.*?)::(.*?)\}/g;
-  const expandedDescription = description.replace(LinkRegex, '<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/$1">$2</a>');
+  let LinkRegex = /\{link::(.*?)::(.*?)\}/g;
+  let expandedDescription = description.replace(LinkRegex, '<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/$1">$2</a>');
+  LinkRegex = /\{atag::(.*?)::(.*?)\}/g;
+  expandedDescription = expandedDescription.replace(LinkRegex, '<a target="_blank" href="$1">$2</a>');
   return expandedDescription;
 }
 
