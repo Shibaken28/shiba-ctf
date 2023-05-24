@@ -8,18 +8,39 @@
 - ★★★：解法をほぼ完全に示す程度
     - 例：「 $a$ を $1$ から $100$ まで全探索しましょう」
 
-## 古典暗号
-
+## Classic Cipher(古典暗号)
 ### No meaning
-
-<summary>ヒント ★★☆</summary>
+<details>
+<summary>ヒント1 ★★☆</summary>
 これは換え字暗号(substitution cipher)です．
 </details>
 
-## 一般技術
+### Zigzag
+<details>
+<summary>ヒント1 ★★☆</summary>
+これはRail fence cipherと呼ばれる暗号です．
+</details>
+
+### Cylinder
+<details>
+<summary>ヒント1 ★☆☆</summary>
+"Cylinder"は「円柱」を意味します．円柱から連想される暗号は何でしょうか．
+</details>
+
+<details>
+<summary>ヒント2 ★★☆</summary>
+これはScytaleと呼ばれる暗号です．
+</details>
+
+## General Skill
+
+### Kanji
+<details>
+<summary>ヒント1 ★★☆</summary>
+シーザー暗号の亜種です．
+</details>
 
 ### Numbers 3
-
 <details>
 <summary>ヒント1 ★☆☆</summary>
 一見すると16進数ですが，違います．
@@ -65,7 +86,6 @@ $$
 
 </details>
 
-## パズル
 ### 2D Lagrange
 
 <details>
