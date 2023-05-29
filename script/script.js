@@ -646,6 +646,48 @@ Reverse's charm, a poetic universe.
     tag: ["DSA"],
     point: 150
   },
+  DH: {
+    title: "DH Starter",
+    description:`
+アリスとボブはフラグを共有したようです。秘密鍵をハックしてフラグを手に入れてください。<br>
+{link::DH/chall.py::chall.py}
+{link::DH/output.txt::output.txt}
+<br><br>
+以下、アリスとボブが鍵共有をする際の手順を説明します。<br>
+Diffie-Hellman鍵共有アルゴリズムは、離散対数問題の難しさを利用しています。<br>
+アリスとボブが共通の素数$p$と適当な数$g$、それぞれランダムな数$a,b$を選びます。<br>
+そして、次の値をそれぞれ計算します。<br>
+$$
+A = g^a \\pmod p
+$$
+$$
+B = g^b \\pmod p
+$$
+そして、$A,B$のみを交換(公開)し、次の値を計算します。
+$$
+R = B^a \\pmod p
+$$
+$$
+S = A^b \\pmod p
+$$
+
+このとき、$R=S$となり、$R$を共有鍵として利用することができます。<br>
+公に出ている値は、$g,p,A,B$のみであり、これらの値から秘密鍵を求めることは困難です。<br>
+`,    flag: "e044c9c66b0c8026121b371759b04d36a4a249303d30219793bd012dd4eca6eb",
+    tag: ["DH"],
+    point: 150
+  },
+  DHMO: {
+    title: "DHMO",
+    description:`
+鍵交換アルゴリズム、その名もDHMO(Diffie-Hellman Mixed Obfuscation)を考えました。<br>
+{link::DHMO/chall.py::chall.py}
+{link::DHMO/output.txt::output.txt}
+`,
+    flag: "a0a8702a1a906015ef809dc017d487f7eb95bb02e696671ff937506b151c24dd",
+    tag: ["DH"],
+    point: 300
+  },
   ECC: {
     title: "ECC Starter 1",
     description:`

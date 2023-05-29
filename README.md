@@ -19,6 +19,7 @@
 - 2023/5/16 問題追加
 - 2023/5/23 DSAの基礎問題を追加
 - 2023/5/24 楕円曲線に関する基礎問題を追加
+- 2023/5/29 Diffie-Hellman鍵共有に関する問題を追加
 
 ## welcome問題
 welcome問題のフラグは`sctf{welcome_to_shiba_ctf}`です．
