@@ -193,6 +193,7 @@ U̷̢̪̦͋̇́̉̀͛͐̀̀̄̅̽͆̕͜n̸̨̘̯̺̗̜̥͉̮̥̿͆͗̃̒͂̐̋͜
 flag: "3d1021d0cadce2619a04e85fb67137e662e5f1cbecb6d96283bfcf39cc2234c2",
     point: 70,
   },
+
   mdn3: {
     title: "AES starter",
     description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
@@ -678,7 +679,7 @@ $$
     point: 150
   },
   DHMO: {
-    title: "DHMO",
+    title: "DHMO Backdoor",
     description:`
 鍵交換アルゴリズム、その名もDHMO(Diffie-Hellman Mixed Obfuscation)を考えました。<br>
 {link::DHMO/chall.py::chall.py}
