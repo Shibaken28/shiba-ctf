@@ -493,7 +493,18 @@ mod演算は，割り算を逆元とすれば，案外普通の演算と同じ�
 `,
     flag: "5efa5ef4336e08dab251162163c62b2cb83e4631272bdf1b86bf41fbea675121",
     tag: ["mod", "math"],
-    point: 150,
+    point: 100,
+  },
+  stair: {
+    title: "Staircase",
+    description:`
+Like Infinite Stairway
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/output.txt">output.txt</a>`,
+    flag: "d106d367278bf68be13170b5fc706890fc72a50797b1032fff306b1f0fad8d04",
+    tag: ["mod", "math"],
+    point: 100
   },
   RSA1: {
     title: "Each RSA",
@@ -534,7 +545,7 @@ RUSH "E"
     description: "二次関数を使って暗号化をしてみました．<br> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/encode.py\">encode.py</a> <a target=\"_blank\" href=\"https://github.com/Shibaken28/shiba-ctf/blob/main/problems/2D-Lagrange/output.txt\">output.txt</a>",
     flag: "04dda818fa93e94e4c1ed3e7be637eaf24909de43a145500041ed1a3b0f1a5f9",
     tag: ["math","PPC"],
-    point: 150,
+    point: 100,
   },
   RSA2: {
     title: "Common N RSA",
@@ -544,7 +555,7 @@ RSA but it's common m,N
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/common-N-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/common-N-RSA/output.txt">output.txt</a>`,
     flag: "ab9e39bbacf42d0428c1b65581c62b0788933c9acf04d97d5e3dead118e6dd57",
     tag: ["RSA"],
-    point: 200
+    point: 100
   },
   RSA4: {
     title: "Many RSA",
@@ -578,17 +589,7 @@ This RSA has some strong primes, so it can't be broken by factoring N.
     tag: ["RSA"],
     point: 200
   },
-  stair: {
-    title: "Staircase",
-    description:`
-Like Infinite Stairway
-<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/encode.py">encode.py</a>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/output.txt">output.txt</a>`,
-    flag: "d106d367278bf68be13170b5fc706890fc72a50797b1032fff306b1f0fad8d04",
-    tag: ["mod", "math"],
-    point: 200
-  },
+
   RSA7: {
     title: "Insufficient RSA",
     description:`There is not much information on this problem, after all, e is not given.
@@ -808,7 +809,6 @@ $d$をsctf{}で囲んで提出してください．
     flag: "",
     point: 0,
   },
-
 };
 
 
