@@ -795,8 +795,8 @@ $d$をsctf{}で囲んで提出してください．
 `
 👜
 <br>
-{link::BackPack/chall.py::chall.py} <br>
-{link::BackPack/output.txt::output.txt}
+{link::BackPack2/chall.py::chall.py} <br>
+{link::BackPack2/output.txt::output.txt}
 `,
     flag: "03c77471727110c4328972113ceeca865cb7e2e83857e89929a9449c6611fc79",
     tag: ["knapsack"],
