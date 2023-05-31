@@ -194,91 +194,7 @@ flag: "3d1021d0cadce2619a04e85fb67137e662e5f1cbecb6d96283bfcf39cc2234c2",
     point: 70,
   },
 
-  mdn3: {
-    title: "AES starter",
-    description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
-    flag: "e713df524228168d6c56be2883ce92993ffa85c9ae63924c11a3b4f97d5e9b7d",
-    point: 30,
-  },
-  AES1: {
-    title : "ECB starter",
-    description:
-`
-フラグをあるkeyを用いてECBモードで暗号化すると次の値になりました．<br>
-b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a
-<br>
-暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
-<a target="_blank" href="./Interactive/ECBchall.html"> 復元サイト </a>
-<br>ただし，上記の値は入力として受け付けません！
-`,
-    flag: "ce5d0f28041afbd66167f54bf13049e10c5b2e8b6300e0182d4f058dfd17ddd0",
-    tag: ["AES"],
-    point: 50,
-  },
-  AES4: {
-    title : "OFB starter",
-    description:
-`
-OFBモードで，「入力」+「フラグ文字列」を暗号化してくれるサイトがあります．
-<a target="_blank" href="./Interactive/OFBchall.html"> 暗号化 </a>
-<br> 復元サイトは用意していません！
-`,
-    flag: "83f11da38e0e3bb57b4d952fd6f7a5a426abe41d0ee17e6712a226ea925d450e",
-    tag: ["AES"],
-    point: 50,
-  },
-  AES2: {
-    title : "CBC starter",
-    description:
-`
-フラグをあるkeyを用いてCBCモードで暗号化すると次の値になりました．<br>
-958fd2d255b337bb0c3d8c95fbcbc56a6793aad6cb36a4c9bbc6bfc1791ac3f0dc5b1476371e1333927ebdbc9d2ab27f
-<br>
-また，使用したinitialization vectorは次の値です．
-<br>
-1122334411223344aabbccddaabbccdd
-<br>
-暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
-<a target="_blank" href="./Interactive/CBCchall.html"> 復元サイト </a>
-<br>ただし，16bytesより長い入力は受け付けません！
-`,
-    flag: "53dbbf52157e2e8c2cdbb3292d4513d69af0176a79bb90e67edd413c6f955d29",
-    tag: ["AES"],
-    point: 60,
-  },
-  padding: {
-    title : "Padding Escapade",
-    description:
-`
-データ長を16(bytes)の倍数にするための，paddingという技術があります．<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Padding/encode.py">encode.py</a>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Padding/output.txt">output.txt</a>
-<br>
-P.S. 本問題で使用されているPaddingは，PKCS#7という方式です．
-`,
-    flag: "530a471535069ae525599639810b14947987689562d13f96ad83b74b8fbb84f7",
-    tag: ["AES", "Padding"],
-    point: 70,
-  },
-  AES3: {
-    title : "Format Detection",
-    description:
-`
-フラグをあるkeyを用いてCBCモードで暗号化すると次の値になりました．<br>
-c20dca2a1c9d606ca7328217b83a97108bae8720ea35c88ad792ec4f25bb3fd2
-<br>
-また，使用したinitialization vectorは次の値です．
-<br>
-99998888777766661111222233334444
-<br>
-暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
-<a target="_blank" href="./Interactive/CBCchall2.html"> 復元サイト </a>
-<br>ただし，復号した結果に「73637466」(文字列sctfを16進数デコードしたもの)が含まれる場合，全体の復号結果は見せません！
-`,
-    flag: "0e4b16237419c18d9809c4b3d8f1f707fe7b2597e161ab9cbd916d72b94f9c00",
-    tag: ["AES"],
-    point: 80,
-  },
+
 
   Equ1: {
     title : "Equation 1",
@@ -357,17 +273,92 @@ c20dca2a1c9d606ca7328217b83a97108bae8720ea35c88ad792ec4f25bb3fd2
     tag: ["math","PPC"],
     point: 70,
   },
-  RSA0: {
-    title: "RSA starter",
-    description:`
-RSA暗号の復元をしましょう．
-<br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/output.txt">output.txt</a>`,
-    flag: "bafefcc7367216294b5c462fa1860875da2a30d19c6049203cf69a9844380dba",
-    tag: ["RSA"],
-    point: 70
-  },
 
+  mdn3: {
+    title: "AES starter",
+    description: "AES暗号を知っていますか?<br>iv = ffffffffffffffffffffffffffffffff<br>key = 01230123012301230123012301230123<br>mode = CBC<br>enc = f47fda4253994089ee89c8f0b76d3991d36c9085cb0ffaa06781fb56dd7fe9a4",
+    flag: "e713df524228168d6c56be2883ce92993ffa85c9ae63924c11a3b4f97d5e9b7d",
+    point: 30,
+  },
+  AES1: {
+    title : "ECB starter",
+    description:
+`
+フラグをあるkeyを用いてECBモードで暗号化すると次の値になりました．<br>
+b6506e08641d53366fdbfa35e8549e24d7666bdf3cbad130ddeb8eb1d0c7b58a
+<br>
+暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
+<a target="_blank" href="./Interactive/ECBchall.html"> 復元サイト </a>
+<br>ただし，上記の値は入力として受け付けません！
+`,
+    flag: "ce5d0f28041afbd66167f54bf13049e10c5b2e8b6300e0182d4f058dfd17ddd0",
+    tag: ["AES"],
+    point: 70,
+  },
+  AES4: {
+    title : "OFB starter",
+    description:
+`
+OFBモードで，「入力」+「フラグ文字列」を暗号化してくれるサイトがあります．
+<a target="_blank" href="./Interactive/OFBchall.html"> 暗号化 </a>
+<br> 復元サイトは用意していません！
+`,
+    flag: "83f11da38e0e3bb57b4d952fd6f7a5a426abe41d0ee17e6712a226ea925d450e",
+    tag: ["AES"],
+    point: 70,
+  },
+  AES2: {
+    title : "CBC starter",
+    description:
+`
+フラグをあるkeyを用いてCBCモードで暗号化すると次の値になりました．<br>
+958fd2d255b337bb0c3d8c95fbcbc56a6793aad6cb36a4c9bbc6bfc1791ac3f0dc5b1476371e1333927ebdbc9d2ab27f
+<br>
+また，使用したinitialization vectorは次の値です．
+<br>
+1122334411223344aabbccddaabbccdd
+<br>
+暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
+<a target="_blank" href="./Interactive/CBCchall.html"> 復元サイト </a>
+<br>ただし，16bytesより長い入力は受け付けません！
+`,
+    flag: "53dbbf52157e2e8c2cdbb3292d4513d69af0176a79bb90e67edd413c6f955d29",
+    tag: ["AES"],
+    point: 70,
+  },
+  padding: {
+    title : "Padding Escapade",
+    description:
+`
+データ長を16(bytes)の倍数にするための，paddingという技術があります．<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Padding/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Padding/output.txt">output.txt</a>
+<br>
+P.S. 本問題で使用されているPaddingは，PKCS#7という方式です．
+`,
+    flag: "530a471535069ae525599639810b14947987689562d13f96ad83b74b8fbb84f7",
+    tag: ["AES", "Padding"],
+    point: 70,
+  },
+  AES3: {
+    title : "Format Detection",
+    description:
+`
+フラグをあるkeyを用いてCBCモードで暗号化すると次の値になりました．<br>
+c20dca2a1c9d606ca7328217b83a97108bae8720ea35c88ad792ec4f25bb3fd2
+<br>
+また，使用したinitialization vectorは次の値です．
+<br>
+99998888777766661111222233334444
+<br>
+暗号化するときに使ったkeyを使って，復号をしてくれるサイトがあります．
+<a target="_blank" href="./Interactive/CBCchall2.html"> 復元サイト </a>
+<br>ただし，復号した結果に「73637466」(文字列sctfを16進数デコードしたもの)が含まれる場合，全体の復号結果は見せません！
+`,
+    flag: "0e4b16237419c18d9809c4b3d8f1f707fe7b2597e161ab9cbd916d72b94f9c00",
+    tag: ["AES"],
+    point: 100,
+  },
   XOR0: {
     title : "XOR starter",
     description:
@@ -505,6 +496,16 @@ Like Infinite Stairway
     flag: "d106d367278bf68be13170b5fc706890fc72a50797b1032fff306b1f0fad8d04",
     tag: ["mod", "math"],
     point: 100
+  },
+  RSA0: {
+    title: "RSA starter",
+    description:`
+RSA暗号の復元をしましょう．
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Just-RSA/output.txt">output.txt</a>`,
+    flag: "bafefcc7367216294b5c462fa1860875da2a30d19c6049203cf69a9844380dba",
+    tag: ["RSA"],
+    point: 70
   },
   RSA1: {
     title: "Each RSA",
