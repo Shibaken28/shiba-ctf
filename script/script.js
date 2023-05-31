@@ -776,6 +776,18 @@ $d$をsctf{}で囲んで提出してください．
     tag: ["ECC"],
     point: 300
   },
+  knapsack: {
+    title: "Knapsack",
+    description:
+`
+ナップザック暗号を解読してください．
+{link::BackPack/chall.py::chall.py}
+{link::BackPack/output.txt::output.txt}
+`,
+    flag: "f01c9e29afa69866605368c3afac21e5082516a4439b8e36a9219a2695e930fa",
+    tag: ["knapsack"],
+    point: 200
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
