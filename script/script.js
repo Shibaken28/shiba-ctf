@@ -688,7 +688,7 @@ $$
 `,
     flag: "a0a8702a1a906015ef809dc017d487f7eb95bb02e696671ff937506b151c24dd",
     tag: ["DH"],
-    point: 300
+    point: 400
   },
   ECC: {
     title: "ECC Starter 1",
