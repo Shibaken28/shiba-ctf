@@ -208,7 +208,7 @@ flag: "3d1021d0cadce2619a04e85fb67137e662e5f1cbecb6d96283bfcf39cc2234c2",
 `
 スーパーウルトラハイパーミラクルロマンティックな暗号です．<br>
 {link::Complex/encode.py::encode.py} <br>
-{link::Complex/output.py::output.py}
+{link::Complex/output.txt::output.txt}
 `,
   flag: "bff2d76bc29707b75fe2642d3fbe98a16dc9d4b9a4ecedec654c1e548585e0ef",
     point: 200,
