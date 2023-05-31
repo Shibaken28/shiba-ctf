@@ -768,8 +768,8 @@ $d$をsctf{}で囲んで提出してください．
     title: "ECC vs. RSA",
     description:
 `
-楕円曲線でRSA暗号みたいものを作ってみました．
-{link::ECC-RSA/encode.sage::encode.sage}
+楕円曲線でRSA暗号みたいものを作ってみました．<br>
+{link::ECC-RSA/encode.sage::encode.sage}<br>
 {link::ECC-RSA/output.txt::output.txt}
 `,
     flag: "02153fa853ab72dad27743ea7c676be3cbd8ebdca4438d4fd44fa7aad9cf1b9d",
@@ -777,16 +777,30 @@ $d$をsctf{}で囲んで提出してください．
     point: 300
   },
   knapsack: {
-    title: "Knapsack",
+    title: "Knapsack Starter",
     description:
 `
 ナップザック暗号を解読してください．
-{link::BackPack/chall.py::chall.py}
+<br>
+{link::BackPack/chall.py::chall.py} <br>
 {link::BackPack/output.txt::output.txt}
 `,
     flag: "f01c9e29afa69866605368c3afac21e5082516a4439b8e36a9219a2695e930fa",
     tag: ["knapsack"],
     point: 200
+  },
+  knapsack2: {
+    title: "What's in the bag?",
+    description:
+`
+👜
+<br>
+{link::BackPack/chall.py::chall.py} <br>
+{link::BackPack/output.txt::output.txt}
+`,
+    flag: "03c77471727110c4328972113ceeca865cb7e2e83857e89929a9449c6611fc79",
+    tag: ["knapsack"],
+    point: 300
   },
   next: {
     title: "coming soon ?",
