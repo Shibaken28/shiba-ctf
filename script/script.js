@@ -193,7 +193,26 @@ U̷̢̪̦͋̇́̉̀͛͐̀̀̄̅̽͆̕͜n̸̨̘̯̺̗̜̥͉̮̥̿͆͗̃̒͂̐̋͜
 flag: "3d1021d0cadce2619a04e85fb67137e662e5f1cbecb6d96283bfcf39cc2234c2",
     point: 70,
   },
-
+  mdn20: {
+    title: "zzzzzzzzzzzzzz",
+    description:
+`
+55sssssss5sss55555s5s5ss5ss555s55s5c666cc666ccc666cccc6c6c6c6c66cc6c6c77777t7777ttt7ttttt7tt777ttt77tttt7fffffffffffffffffffffffffffffffffff[{[[[{{{{{{[{[[{[{{[[{[[{[[[{{{[{[{hhHHHHHhhhhHhHHhhhHHHHhhhHhhHhhHHHh1iii11iii1ii111111111i1i11i11iiiiiiDddDDdddDdDdddDdDDDDdDdDDDdDDdddDdde333ee33e3e3ee3eee3eeee3333ee333e33__---_-__--__-_-___-___---_-__-_---44444444444444444444444444444444444nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnDDDdDdDDdDdDdDdddddddddDdDDDDDddDdD___-_____--_-_-__--_--_----__---_-_ssss5555555s55sssssss55s5s5s5s5s555EEEE33E3E3EE3E3E333EE333E333E3EE3E333ee3e3333eee3e33e3e3ee3ee33e33ee3eKKKkKKkkkKKKkKkKKkkkKkKKkKkkkkkkkKK__---__-_---__-__--___-_----___-_-_jJJJjJJjJjjJJjJJJjjJjjjJJjjJjjjjjJJo00o0o00oooooo000o00o00ooo00000o0ooyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyfffFFFfFFfFFfFFffffFfFfFFfFffFfFfFfuUuUuUUuuuuUUUuuuUuUuUUUuuuUUuUuUUu1ll11llll1l11l1l11lll1l111l1ll111l1___--___--__---_--_--__--_-__--___-e3ee33e3eeee3ee33ee3e3e333333e3e3e3xXxxXXxXxXxXxxxXxxXXXxxxXXxXxXXxxXXppPpPpPPPpPPpPpppPpPPpPPppppPPpPPpplllll1111l111lll1l1l1lllll11l111l1100oo0o0oo0oo0o000oo0ooo0o0oo0o00000rrrRrRrRrrrRrRRRrrrRrrRRRrRrrRRRRRr4a4a444444a4a4aaa4aaaaa4aa444a4aa44tt7t777tttttt7t777tt77t7tt7t7t77t77iii11iii11i111i1i1111i11iii1ii1i1i1o00o0oooo000o0ooo0oo0o0o0o00000o0o0nNnNnNNNNnNnnNNnnnnNnNnnNNNNnnnnNnN}]]]]}}}}}]}]}]}}]}]]}]}}]}]}}]}]]]
+`,
+  flag: "504f4f9d377e088a19f0b434e451d317cba7f556e8b5d537632a92ab20764366",
+    point: 30,
+  },
+  mdn21: {
+    title: "Ultimate Caesar",
+    description:
+`
+スーパーウルトラハイパーミラクルロマンティックな暗号です．<br>
+{link::Complex/encode.py::encode.py} <br>
+{link::Complex/output.py::output.py}
+`,
+  flag: "bff2d76bc29707b75fe2642d3fbe98a16dc9d4b9a4ecedec654c1e548585e0ef",
+    point: 200,
+  },
 
 
   Equ1: {
