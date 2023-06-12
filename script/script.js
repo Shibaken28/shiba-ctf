@@ -529,7 +529,7 @@ RSA暗号の復元をしましょう．
   RSA1: {
     title: "Each RSA",
     description:`
-Each Letter, Each RSA
+文字ごとに暗号化しました
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Each-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Each-RSA/output.txt">output.txt</a>
 <br><br>
@@ -541,7 +541,7 @@ Each Letter, Each RSA
   RSA3: {
     title: "Small RSA",
     description:`
-$e$ looks small 
+$e$ が小さいようです
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/small-RSA/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/small-RSA/output.txt">output.txt</a>`,
@@ -570,7 +570,7 @@ RUSH "E"
   RSA2: {
     title: "Common N RSA",
     description:`
-RSA but it's common m,N 
+同じ$N$を使ってはいけない理由とは？ 
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/common-N-RSA/encode.py">encode.py</a> <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/common-N-RSA/output.txt">output.txt</a>`,
     flag: "ab9e39bbacf42d0428c1b65581c62b0788933c9acf04d97d5e3dead118e6dd57",
@@ -580,7 +580,7 @@ RSA but it's common m,N
   RSA4: {
     title: "Many RSA",
     description:`
-I used many RSA.
+素数を先に用意しておけば計算量が少なくすみます
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/many-RSA/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/many-RSA/output.txt">output.txt</a>`,
@@ -591,7 +591,7 @@ I used many RSA.
   RSA5: {
     title: "Unbalance RSA",
     description:`
-This RSA has some strong primes, so it can't be broken by factoring N.
+でかい素数を使っているから素因数分解は無理だね
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Unbalance-RSA/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Unbalance-RSA/output.txt">output.txt</a>`,
@@ -601,7 +601,7 @@ This RSA has some strong primes, so it can't be broken by factoring N.
   },
   RSA6: {
     title: "Cut RSA",
-    description:`First, tear p and q in half. Next, attach them together.
+    description:`$p$と$q$を半分にカットしてくっつけます
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/cut-RSA/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/cut-RSA/output.txt">output.txt</a>`,
@@ -612,7 +612,7 @@ This RSA has some strong primes, so it can't be broken by factoring N.
 
   RSA7: {
     title: "Insufficient RSA",
-    description:`There is not much information on this problem, after all, e is not given.
+    description:`$e$の値すら公開しません！
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Insufficient-RSA/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Insufficient-RSA/output.txt">output.txt</a>`,
@@ -635,7 +635,7 @@ EVERYONE MENTION
   RSA8: {
     title: "Hyperdefensiveness",
     description:`
-    I realized it was dangerous to encrypt each letter individually, so I made it very complicated.
+一文字ずつの暗号化は危険なので、強化しました
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Hyperdefensiveness/output.txt">output.txt</a>`,
@@ -647,8 +647,7 @@ EVERYONE MENTION
   RSA10: {
     title: "Inverse Reversal",
     description:`
-Inverse's allure, a captivating verse,<br>
-Reverse's charm, a poetic universe.
+🙃
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Inverse-RSA/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Inverse-RSA/output.txt">output.txt</a>`,
