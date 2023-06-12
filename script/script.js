@@ -508,7 +508,7 @@ mod演算は，割り算を逆元とすれば，案外普通の演算と同じ�
   stair: {
     title: "Staircase",
     description:`
-Like Infinite Stairway
+階
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/encode.py">encode.py</a>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/staircase/output.txt">output.txt</a>`,
