@@ -110,6 +110,12 @@ key: esp
     flag: "9d23a7a803a48dd9663095fce5c378408a14ba4334721a445290876fde2fde78",
     point: 20,
   },
+  cls7: {
+    title: "AtCipher",
+    description: "hxgu{qfhg_orpv_zuurmv_xrksvi}",
+    flag: "4364b9b2dac038120c4b820eb9357053f7dead6fd8c41f86ef454055f0900b62",
+    point: 20,
+  },
   mdn1: {
     title: "Numbers",
     description: "115, 99, 116, 102, 123, 78, 117, 109, 98, 101, 114, 115, 95, 97, 114, 101, 95, 97, 95, 99, 111, 109, 109, 111, 110, 95, 108, 97, 110, 103, 117, 97, 103, 101, 125",

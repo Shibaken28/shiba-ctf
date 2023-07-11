@@ -25,7 +25,7 @@ for i in range(10):
     leaked.append(gen.next())
 
 print(f"m = {m}")
-print(f"b = {a}")
+print(f"b = {b}")
 print(f"x = {leaked}")
 
 flag = "?"
