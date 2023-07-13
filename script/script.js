@@ -511,6 +511,22 @@ mod演算は，割り算を逆元とすれば，案外普通の演算と同じ�
     tag: ["mod", "math"],
     point: 100,
   },
+
+  modpuzzle: {
+    title : "ExpHash",
+    description:
+`
+累乗を用いたハッシュ関数、その名もExpHashを作りました。得られたパスワードをsctf{}で囲んで提出してください。
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/ExpHash/hash.py">encode.py</a>
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/ExpHash/output.txt">output.txt</a>
+`,
+    flag: "77b54d8daf19c870bad0c1bff95f4739689469726f0367cb1e2ab2bd85393cbb",
+    tag: ["mod", "hash"],
+    point: 300,
+  },
+  
   stair: {
     title: "Staircase",
     description:`
