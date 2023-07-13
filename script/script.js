@@ -518,7 +518,7 @@ mod演算は，割り算を逆元とすれば，案外普通の演算と同じ�
 `
 累乗を用いたハッシュ関数、その名もExpHashを作りました。得られたパスワードをsctf{}で囲んで提出してください。
 <br>
-<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/ExpHash/hash.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/ExpHash/hash.py">hash.py</a>
 <br>
 <a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/ExpHash/output.txt">output.txt</a>
 `,
