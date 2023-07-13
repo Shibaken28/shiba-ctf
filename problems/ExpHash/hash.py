@@ -1,5 +1,3 @@
-# 結合法則の成り立つハッシュ関数
-# 1. 乗法ハッシュ
 import random
 import string
 from Crypto.Util.number import getPrime
