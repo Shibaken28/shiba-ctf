@@ -538,6 +538,17 @@ mod演算は，割り算を逆元とすれば，案外普通の演算と同じ�
     tag: ["mod", "math"],
     point: 100
   },
+  Smidgen: {
+    title: "Smidgen",
+    description:`
+7桁の数字しか与えられません。
+<br>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Smidgen/encode.py">encode.py</a>
+<a target="_blank" href="https://github.com/Shibaken28/shiba-ctf/blob/main/problems/Smidgen/output.txt">output.txt</a>`,
+    flag: "8caddcc6fa7715ebb431dd8a6875b8acfabcb5cdcbe058b1e433dc298873a1e9",
+    tag: ["math"],
+    point: 150
+  },
   RSA0: {
     title: "RSA starter",
     description:`
