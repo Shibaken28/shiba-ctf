@@ -855,6 +855,12 @@ $d$をsctf{}で囲んで提出してください．
     tag: ["knapsack"],
     point: 300
   },
+  googleform: {
+    title: "google forms",
+    description: "学年集会の出欠確認フォームは、以下よりアクセスしてください。当日、番号をお伝えします。<br>{atag::https://forms.gle/oPrvjSJrjUv27WKF7::集会出席確認フォーム}",
+    flag: "f9b1939149243c12f5e668af35ed3535dd63c69416364843d6ca55431e596733",
+    point: 100,
+  },
   next: {
     title: "coming soon ?",
     description: "作者のやる気が出ると問題が追加されます",
